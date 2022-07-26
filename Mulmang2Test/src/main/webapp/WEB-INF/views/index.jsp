@@ -106,12 +106,12 @@
 								  <div class="tab-content">
 								  
 								   <div role="tabpanel" class="tab-pane show" id="flights" role="tabpanel" aria-labelledby="findSc" >
-								   <form action="#" >
+								   <form action="findSearch.do"  mehod="post" >
 									  <div class="row">
 										  <div class="col-xxs-12 col-xs-12 mt">
 											  <div class="input-field">
-												  <label for="from">이름</label>
-												  <input type="text" class="form-control" id="from-place" placeholder="이름"/>
+												  <label for="name">이름</label>
+												  <input name="find_name" type="text" class="form-control" id="from-place" placeholder="이름"/>
 											  </div>
 										  </div>
 										  
@@ -119,11 +119,11 @@
 											<div class="input-field">
 												<label for="date-end">성별</label>
 												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="여">
+												  <input class="form-check-input" type="radio" name="find_gender" id="male" value="남">
 												  <label class="form-check-label" for="inlineRadio2">남</label>
 											  </div>
 												  <div class="form-check form-check-inline">
-													  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="여">
+													  <input class="form-check-input" type="radio" name="find_gender" id="female" value="여">
 													  <label class="form-check-label" for="inlineRadio2">여</label>
 												  </div>
 											</div>
@@ -133,12 +133,12 @@
 											  <div class="input-field">
 												  <label for="date-end">장애여부</label>
 												  <div class="form-check form-check-inline">
-													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="여">
+													<input class="form-check-input" type="radio" name="find_handicaped" id="Y" value="유">
 													<label class="form-check-label" for="inlineRadio2">유</label>
 												</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="여">
-														<label class="form-check-label" for="inlineRadio2">여</label>
+														<input class="form-check-input" type="radio" name="find_handicaped" id="N" value="무">
+														<label class="form-check-label" for="inlineRadio2">무</label>
 													</div>
 											  </div>
 										  </div>
@@ -146,13 +146,19 @@
 										  <div class="col-xxs-12 col-xs-12 mt alternate">
 											  <div class="input-field">
 												  <label for="date-end">인상착의</label>
-												  <input type="text" class="form-control" id="from-place" placeholder="인상착의를 입력해주세요."/>
+												  <input type="text" class="form-control" name="find_look" id="from-place" placeholder="인상착의를 입력해주세요."/>
 											  </div>
 										  </div>
 										  <div class="col-xxs-12 col-xs-12 mt alternate">
 											  <div class="input-field">
 												  <label for="date-end">특징</label>
-												  <input type="text" class="form-control" id="from-place" placeholder="특징을 입력해주세요."/>
+												  <input type="text" class="form-control" id="from-place" name="find_feature" placeholder="특징을 입력해주세요."/>
+											  </div>
+										  </div>
+										  <div class="col-xxs-12 col-xs-12 mt alternate">
+											  <div class="input-field">
+												  <label for="date-end">설명</label>
+												  <input type="text" class="form-control" id="from-place" name="find_desc" placeholder="설명을 입력해주세요."/>
 											  </div>
 										  </div>
 										  <div class="col-xxs-12 col-xs-6 mt alternate">
@@ -164,12 +170,22 @@
 										  <div class="col-xxs-12 col-xs-6 mt">
 											  <section>
 												  <label for="class">실종지역:</label>
-												  <select class="cs-select cs-skin-border">
-													  <option value="" disabled selected>실종지역</option>
-													  <option value="1">서울</option>
-													  <option value="2">광주</option>
-													  <option value="3">부산</option>
-													  <option value="4">대구</option>
+												  <select name="missing_region" class="cs-select cs-skin-border">
+								<option selected value="all">실종 지역</option>
+								<option value="서울특별시">서울특별시</option>
+								<option value="경기도">경기도</option>
+								<option value="강원도">강원도</option>
+								<option value="충청북도">충청북도</option>
+								<option value="충청남도">충청남도</option>
+								<option value="경상남도">경상남도</option>
+								<option value="경상북도">경상북도</option>
+								<option value="전라남도">전라남도</option>
+								<option value="전라북도">전라북도</option>
+								<option value="대전광역시">대전광역시</option>
+								<option value="대구광역시">대구광역시</option>
+								<option value="부산광역시">부산광역시</option>
+								<option value="광주광역시">광주광역시</option>
+								<option value="인천광역시">인천광역시</option>
 												  </select>
 											  </section>
 										  </div>
