@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.UserMapper">
+
+    <!-- 회원가입 -->
+    <!-- #{user_tel} -->
+    <insert id="userJoin" parameterType="com.smhrd.domain.User">
+        insert into TBL_USER(user_id, user_nick, user_pw, user_tel, user_type)
+        values(#{user_id},#{user_nick}, #{user_pw},  #{user_tel}, #{user_type})
+    </insert>
+  
+    <!-- 로그인  -->
+	<select id="userLoginCk" resultType="com.smhrd.domain.User" parameterType="com.smhrd.domain.User">
+		select * from TBL_USER where user_id=#{user_id} and user_pw=#{user_pw}
+	</select>
+    
+
+    
+</mapper>

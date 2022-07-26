@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.mapper.BoardReportMapper">
+    
+    <!-- 모든 게시글 가져오기 -->
+    <select id="boardReportList" resultType="com.smhrd.domain.BoardReport">
+        SELECT * FROM TBL_REPORT
+    </select>
+    
+    <!-- 상세 페이지 -->
+    <select id="boardReportView" resultType="com.smhrd.domain.BoardReport">
+        SELECT * FROM TBL_REPORT WHERE report_seq = #{report_seq}
+    </select>
+
+	<!-- 검색기능 -->
+	<select id="boardReportSearch" parameterType="com.smhrd.domain.BoardReport"	resultType="com.smhrd.domain.BoardReport">
+		SELECT * FROM TBL_REPORT
+	<trim prefix="WHERE" prefixOverrides="AND">
+		<!--이름 -->
+		<if test="person_name != null">
+			person_name LIKE CONCAT('%',#{person_name},'%')</if>
+		<!--성별-->
+		<if test="gender != null">
+			AND gender = #{gender}</if>
+		<!--발견지역 -->
+		<if test="report_region != 'all'">
+			AND report_region = #{report_region}</if>
+		<!--특징 -->
+		<if test="report_feature != null">
+			AND report_feature LIKE CONCAT('%',#{report_feature},'%')</if>
+		<!--설명 -->
+		<if test="report_desc != null">
+			AND report_desc LIKE CONCAT('%',#{report_desc},'%')</if>
+	</trim>
+	</select>
+	
+</mapper>

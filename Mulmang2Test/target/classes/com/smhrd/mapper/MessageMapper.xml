@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.smhrd.mapper.MessageMapper">
+    
+    <!-- 메세지보내기 -->
+    <insert id="messageSend" parameterType="com.smhrd.domain.Message">
+        
+        INSERT INTO TBL_MESSAGE(msg_title, msg_content, msg_sender_id, msg_receiver_id) 
+        VALUES(#{msg_title}, #{msg_content}, #{msg_sender_id}, #{msg_receiver_id})
+        
+    </insert>
+      
+    
+    <!-- 메세지 출력 -->
+    <select id="messageReceive" resultType="com.smhrd.domain.Message">
+        
+        SELECT * FROM TBL_MESSAGE WHERE msg_receiver_id = #{msg_receiver_id}
+        
+    </select>
+      
+      
+      
+</mapper>

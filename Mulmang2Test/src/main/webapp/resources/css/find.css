@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #777;
+  border-radius: 5px;
+  color: #777;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+}
+
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+
+
+.bb{
+  display: block;
+  position: relative;
+  left: 10px;
+  top: 200px
+  
+
+}
+
+.bu{
+  
+  position: relative;
+  
+  top: 200px;
+  left: 100ox; 
+  
+
+}
+
+.pb{
+  display: block;
+  align-content: center;
+}
+
+
+
+
+
+.paging {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0;
+}
+
+.paging {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0;
+}
+.paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+ .paging a.bt {
+  border: 1px solid #eee;
+  background: #eee;
+}
+
+.paging a.num {
+  border: 1px solid rgb(141, 157, 167);
+  font-weight: 600;
+  color: rgb(141, 157, 167);
+}
+
+.paging a.num.on {
+  background: rgb(141, 157, 167);
+  color: #fff;
+}

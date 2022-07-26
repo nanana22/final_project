@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.BoardFindMapper">
+    <!-- 게시글 작성 -->
+    <insert id="BoardFindInsert" parameterType="com.smhrd.domain.BoardFind">
+        insert into TBL_FINDING(user_id, find_name, find_gender,
+        find_handicaped, missing_region, find_feature, find_look, find_desc)
+        values(#{user_id},#{find_name},#{find_gender},#{find_handicaped}
+        ,#{missing_region},#{find_feature},#{find_look},#{find_desc})
+    </insert>
+    
+    
+    <insert id="boardFindInsert2" parameterType="com.smhrd.domain.BoardFind">
+        insert into TBL_FACE(USER_ID, REAL_FACE)
+        values(#{USER_ID}, #{REAL_FACE})
+    </insert>
+    
+    
+    <!-- 민지 리스트 -->
+    <select id="boardFindList" resultType="com.smhrd.domain.BoardFind">
+        SELECT f.find_name, f.missing_date, f.find_seq, f.missing_region, r.real_face, d.deep_result
+        FROM TBL_FINDING f, TBL_FACE r, TBL_DEEP d
+        WHERE f.user_id = r.user_id
+        AND f.find_seq = d.find_seq
+    </select>
+    
+    <select id="boardFindView" resultType="com.smhrd.domain.BoardFind">
+        SELECT * FROM TBL_FINDING WHERE find_seq = #{find_seq}
+    </select>
+</mapper>
