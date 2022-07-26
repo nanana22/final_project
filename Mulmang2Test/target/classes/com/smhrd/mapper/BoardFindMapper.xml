@@ -27,7 +27,43 @@
         AND f.find_seq = d.find_seq
     </select>
     
+    
+    
+    <!-- 민지 뷰 -->
     <select id="boardFindView" resultType="com.smhrd.domain.BoardFind">
         SELECT * FROM TBL_FINDING WHERE find_seq = #{find_seq}
+    </select>
+    
+    
+    
+    <!-- 민지 검색 -->
+    <select id="boardFindSearch" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.BoardFind">
+        SELECT * 
+        FROM TBL_FINDING f, TBL_FACE r, TBL_DEEP d
+        WHERE (f.user_id = r.user_id
+        AND f.find_seq = d.find_seq)
+    <trim >
+		<!--이름 -->
+		<if test="find_name != null">
+			AND f.find_name LIKE CONCAT('%',#{find_name},'%')</if>
+		<!--성별-->
+		<if test="find_gender != null">
+			AND f.find_gender = #{find_gender}</if>
+		<!--장애여부-->
+		<if test="find_handicaped != null">
+			AND f.find_handicaped = #{find_handicaped}</if>
+		<!--실종지역 -->
+		<if test="missing_region != 'all'">
+			AND f.missing_region = #{missing_region}</if>
+		<!--착의사항 -->
+		<if test="find_look != null">
+			AND f.find_look LIKE CONCAT('%',#{find_look},'%')</if>
+		<!--특징 -->
+		<if test="find_feature != null">
+			AND f.find_feature LIKE CONCAT('%',#{find_feature},'%')</if>
+		<!--설명 -->
+		<if test="find_desc != null">
+			AND f.find_desc LIKE CONCAT('%',#{find_desc},'%')</if>
+	</trim>
     </select>
 </mapper>

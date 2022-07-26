@@ -1,13 +1,9 @@
-$(document).ready( () => { 
-    alert("ajax 통신 전")
+$(document).ready( () => {
     $.ajax({
         url : 'boardFindList.do', 
         type : 'post',
         dataType : 'json',
         success : function(res) {
-            alert("ajax 통신 완료!")
-            console.log(res);
-            console.log(res[0]);
             
             // table에 출력
             $('#child_list').html('');

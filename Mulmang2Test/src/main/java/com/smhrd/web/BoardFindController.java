@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.smhrd.domain.BoardFind;
+import com.smhrd.domain.BoardReport;
 import com.smhrd.mapper.BoardFindMapper;
 
 @Controller
@@ -87,5 +88,23 @@ public class BoardFindController {
 		System.out.println(vo);
 		return "findView";
 	}
+	
+	//민지 검색
+	@RequestMapping("/findSearch.do")
+	public String reportSearchList(BoardFind vo, HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		List<BoardFind> list = mapper.boardFindSearch(vo);
+		session.setAttribute("searchList", list);
+		session.setAttribute("keyword", vo);
+		System.out.println("검색결과 >> : " + list);
+		return "redirect:/findResult.do";
 
+	}
+	
+	//검색 결과 페이지
+	@RequestMapping("/findResult.do")
+	public String searchList() {
+		return "findSearchList";
+	}
+	
 }

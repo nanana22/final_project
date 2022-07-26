@@ -23,7 +23,7 @@
 
 </head>
 <body>
-
+	<%@ include file="header.jsp"%>
 
 	<%
 		User user = (User) session.getAttribute("user");
@@ -133,7 +133,7 @@
 			<c:choose>
 				<c:when test="${empty user }">
 
-					<a id="noLogMSg" class="btn btn-secondary"
+					<a id="noLogMsg" class="btn btn-secondary"
 						data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
 						aria-controls="offcanvasExample" style="width: 120px;"> 메세지 </a>
 					<button class="btn btn-secondary" type="submit"
@@ -144,7 +144,7 @@
 
 				<c:otherwise>
 
-					<a id="onLogMSg" class="btn btn-secondary"
+					<a id="onLogMsg" class="btn btn-secondary"
 						data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
 						aria-controls="offcanvasExample" style="width: 120px;"> 메세지 </a>
 					<button class="btn btn-secondary" type="submit"
@@ -194,7 +194,8 @@
 
 								<input id="sender" type="hidden" name="msg_sender_id"
 									value="<%=user.getUser_id()%>"> <input id="receiver"
-									type="hidden" name="msg_receiver_id" value="${findView.user_id}">
+									type="hidden" name="msg_receiver_id"
+									value="${findView.user_id}">
 								<div class="text-center">
 									<!-- Button trigger modal -->
 									<button id="toastStart" class="btn btn-secondary"
@@ -282,16 +283,14 @@
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 		<script>
-
-
 			$(document).on('click', '#noLogMsg', function() {
 				alert('로그인 하세요')
 				location.href = '/web/loginCk.do'
 			})
 		</script>
-		
+
 		<script type="text/javascript" src="/web/resources/js/msgList.js"></script>
 		<script type="text/javascript" src="/web/resources/js/msgForm.js"></script>
-		
+		<%@ include file="footer.jsp"%>
 </body>
 </html>

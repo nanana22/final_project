@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +14,10 @@
 <link rel="stylesheet" href="./resources/css/find.css">
 </head>
 <body>
+	<%@ include file="header.jsp"%>
 
 	<div class="container">
-		<form name="f" method="post">
+		<form name="f" action="findSearch.do" method="post">
 
 
 			<h4>실종아동 검색</h4>
@@ -25,8 +27,8 @@
 				<thead>
 					<tr>
 						<th colspan="2" scope="col"><input type="text" name="find_name"
-							class="form-control" id="Name" placeholder="이름" value=""
-							required=""></th>
+							class="form-control" id="Name" placeholder="이름" 
+							></th>
 						<td scope="col">성별
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio"
@@ -56,7 +58,7 @@
 				<tbody>
 					<tr>
 						<th scope="row"><input type="text" class="form-control" name="find_look"
-							id="look" placeholder="착의사항" value="" required=""></th>
+							id="look" placeholder="착의사항" ></th>
 
 						<!-- <td> <label for="firstName" class="form-label">실종일자</label> <select class="form-select"  aria-label="Default select example name="yy" id="year" style="width: 100px;"></select>
                                       <select class="form-select text-center" aria-label="Default select example name="mm" id="month" style="width: 100px;"></select>
@@ -102,13 +104,13 @@
 					<tr>
 						<td scope="row">특징</td>
 						<td colspan="3"><input type="text" class="form-control" name="find_feature"
-							id="character" placeholder="특징" value="" required=""></td>
+							id="character" placeholder="특징"  ></td>
 
 					</tr>
 					<tr>
 						<td scope="row">설명</td>
 						<td colspan="3"><input type="text" class="form-control" name="find_desc"
-						id="" placeholder="설명" value="" required=""></td>
+						id="" placeholder="설명"  ></td>
 
 					</tr>
 				</tbody>
@@ -118,7 +120,7 @@
 		
 
 		<div class="text-center mt-6">
-			<button type="button" class="btn btn-secondary">검색하기</button>
+			<button type="submit" class="btn btn-secondary">검색하기</button>
 		</div>
 		</form>
 	</div>
@@ -164,7 +166,8 @@
 		crossorigin="anonymous"></script>
 
 
-	<script type="text/javascript" src="resources/js/boardFindList.js"></script>
-
+	<script type="text/javascript" src="/web/resources/js/boardFindList.js"></script>
+<%@ include file="footer.jsp"%>
+	
 </body>
 </html>

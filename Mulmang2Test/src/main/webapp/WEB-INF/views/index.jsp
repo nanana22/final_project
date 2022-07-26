@@ -300,7 +300,7 @@
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
-									<a href="#">미래얼굴예측기술</a>
+									<a href="/web/findList.do">미래얼굴예측기술</a>
 								</h3>
 								<span class="posted_by"></span>
 								<!-- <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span> -->
@@ -308,7 +308,7 @@
 									물망초의 "미래 얼굴 예측 기술"을 통해<br> 장기실종아동의 찾기에 도움을 줍니다.
 								</p>
 								<p>
-									<a href="#">실종아동등록페이지로 이동</a>
+									<a href="/web/findList.do">실종아동등록페이지로 이동</a>
 								</p>
 							</div>
 						</div>

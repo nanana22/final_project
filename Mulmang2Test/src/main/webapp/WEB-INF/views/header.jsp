@@ -30,7 +30,7 @@
 
 
 
-								<li><a href="#">실종아동찾기</a></li>
+								<li><a href="/web/findList.do">실종아동찾기</a></li>
 								<li><a href="/web/reportList.do">제보하기</a></li>
 								<li><a href="#" class="fh5co-sub-ddown">도움마당</a>
 									<ul class="fh5co-sub-menu">

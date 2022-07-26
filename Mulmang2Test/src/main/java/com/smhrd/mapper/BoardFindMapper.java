@@ -20,8 +20,13 @@ public interface BoardFindMapper {
 	
 	public BoardFind boardFindInsert2(BoardFind bf2);
 	
+	
+	// 게시글 목록
 	public List<BoardFind> boardFindList();
 	
+	// 게시글 상세
 	public BoardFind boardFindView(int find_view);
 	
+	// 게시글 검색
+	public List<BoardFind> boardFindSearch(BoardFind vo);
 }
