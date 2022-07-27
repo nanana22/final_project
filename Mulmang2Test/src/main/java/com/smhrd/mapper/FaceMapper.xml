@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--     <insert id="boardFindInsert2" parameterType="com.smhrd.domain.Face">
+        insert into TBL_FACE(USER_ID, REAL_FACE)
+        values(#{USER_ID}, #{REAL_FACE})
+    </insert>
+     -->

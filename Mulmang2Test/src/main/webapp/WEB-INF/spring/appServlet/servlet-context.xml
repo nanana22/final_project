@@ -21,7 +21,9 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 
-	
+	<!-- fileupload -->
+<beans:bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
+	</beans:bean>
 	
 	<!-- contrller구분하고 mapping해준다 -->
 	<!-- 프로젝트 만들때 만든 기본 패키지로 설정되어있음 -->
