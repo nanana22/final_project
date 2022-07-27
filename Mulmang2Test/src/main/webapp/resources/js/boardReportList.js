@@ -15,7 +15,7 @@ $(document).ready( () => {
         $('#child_list').html('');
         for(let i = 0; i < res.length; i+=2){
            tr = `
-           <div class="container">
+           <div class="container" id="imgsize">
            <div class="row">
                <div class="col">
                    <div class="card mb-3" style="max-width: 500px;">

@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'LeferiBaseType-BoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-BoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h5, h4, h3 { 
+  font-family: 'LeferiBaseType-BoldA';
+}
+
+h7 {
+  font-family: 'LeferiBaseType-RegularA';
+}
+
+/* 아이디랑 날짜 위치*/
+
+#dateID {
+		
+	display: block;
+    position: relative;
+    left: 900px;
+    top: 26px;
+    font-size: 5px;
+}
+#reportID {
+	margin-left : 15px;
+}
+
+
+
+
+
+
+
+body > div > div.row.info{
+	margin-top : 40px;
+	margin-bottom : 20px;
+	padding : 20px;
+}
+
+
+/* 주의 */
+
+body > div > div:nth-child(6) > div { 
+	
+	  
+	text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 160px;
+    padding-top: 30px;
+    padding-botton : 20px;
+    margin-top:30px;
+}
+
+
+/* 이미지 크기조절*/
+
+body > div > div.row.info > div.col-md-4.reportPhoto > figure > img{
+	width : 400px;
+	height : 300px;
+	margin-right : 10px;
+}
+
+
+/* 메세지 리스트 위치변경 */
+body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
+	padding-bottom : 2px;
+	font-size : 19px;
+}
+
+
+
+.msgListbt {
+	margin-top: 90px;
+    display: block;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+
+.List {
+	margin-left : 10px;
+}
+
+
+/*메세지 수정*/
+
+#msgForm > div.mb-3.row-g-3 > div:nth-child(1) {
+	margin-top : 10px;
+	margin-bottom : 2px;
+	padding-left: 2px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+#msgLL {
+	margin-top : 30px;
+	margin-bottom : 100px;
+}
+
+
+
+
+
+
+
+/* 페이징 */
+
+.paging {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0;
+}
+
+
+.paging {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0;
+}
+.paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px; 
+  font-size: 15px;
+  text-decoration:none ;
+  font-family: 'LeferiBaseType-BoldA';
+}
+
+ .paging a.bt {
+
+  margin : 3px; 
+  font-family: 'LeferiBaseType-BoldA';
+	
+}
+
+.paging a.num {
+  
+  font-weight: 600;
+  color: rgb(141, 157, 167);
+  text-align : center;
+}
+
+.paging a.num.on {
+  
+  color: #3494e6;
+}
+
+
+
+/*메세지 리스트*/
+
+#noLogMsg ,#onLogMsg , .List {
+	
+	width : 200px;
+	height : 50px;
+	font-size : 20px;
+	padding: 14px;
+}
+
+
+#look{
+	margin-bottom : 5px;
+}
+
+
+#toastStart {
+	width : 150px;
+	height : 40px;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	font-size : 16px;
+	    font-family: 'GmarketSansMedium';
+	
+}
+
+
+#msgLL > thead > tr > th {
+	text-align : center;
+	font-family: 'GmarketSansMedium';
+}
+
+
+
+#msgList > tr > td > p {
+	
+	font-family: 'LeferiBaseType-RegularA';
+	
+	
+}
+
+
+#offcanvasExample > div.offcanvas-body > div.container > div {
+	
+	display: block;
+    position: relative;
+    right: 205px;
+}
+
+
+
+#offcanvasExample{
+	width : 750px;
+	padding : 24px;
+		
+	
+}
+
+
+
+#onLogMsg{
+	
+	font-family: 'LeferiBaseType-RegularA';
+}
+
+
+#fh5co-wrapper > div.container > div:nth-child(3) > div.mt-6.mlb.msgListbt > button{
+	font-size : 20px;
+	font-family: 'LeferiBaseType-RegularA';
+	padding: 13px;
+}
+
+
+
+/* 제보 상세 페이지*/
+
+#fh5co-wrapper > div.container > div.row.info > div.col-md-4.reportPhoto > figure > img{
+	height: 265px;
+}
+
+
+#fh5co-wrapper > div.container > div.row.info {
+	
+}
+
+
+
+#addTable {
+	border : none;
+}
+
+
+
+
+#fh5co-wrapper > div.container > div:nth-child(1) > h3{
+	display: block;
+	position : relative;
+	top: 27px;
+    font-size: 25px;
+}
+
+
+#addTable{
+	padding : 13px;
+	
+}
+
+
+
+#fh5co-wrapper > div.container > div:nth-child(6) > div {
+	
+	text-align: center;
+    border: 1px solid #CCC;
+    height: 148px;
+    margin-bottom: 68px;
+    padding: 17px;
+    margin-top: 70px;
+    color: #777;
+}
+
+
+#fh5co-wrapper > div.container > div.row.info > div.reportPhoto {
+	display: block;
+    position: relative;
+	
+}
+
+
+
+#fh5co-wrapper > div.container > div.row.info > div.reportPhoto > figure > img{
+	    height: 400px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <title>제보 상세페이지</title>
-<link rel="stylesheet" href="/web/resources/css/reportView.css">
+<link rel="stylesheet" href="/web/resources/main/css/reportView.css">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -39,14 +39,6 @@
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 
 
-
-<style>
-.b {
-	display: block;
-	position: relative;
-	left: 550px;
-}
-</style>
 <script type="text/javascript">
 	function goList() {
 		location.href = '/web/reportList.do'
@@ -72,7 +64,7 @@
 			<hr class="my-1">
 		</div>
 		<div class="row info">
-			<div class="col-md-4 reportPhoto">
+			<div class="reportPhoto">
 			<figure class="figure">
   				<img src="${rptView.report_photo}" class="figure-img img-fluid rounded" alt="...">
   				
@@ -80,11 +72,10 @@
 				
 			</div>
 			
-	
-<div class="col-md-1"></div>
 
-		<div class="col-md-7 table_text">
-			<table class="table table-borderless">
+
+		<div class="table_text" >
+			<table class="table table-borderless" id="addTable">
 				<tbody>
 					<tr>
 						<td scope="row">이름
@@ -169,10 +160,10 @@
 
 					<div class="offcanvas offcanvas-end" tabindex="-1"
 						id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
-						style="width: 800px;">
+						>
 						<div class="offcanvas-header">
-							<h4 class="offcanvas-title" id="offcanvasExampleLabel">메세지
-								작성</h4>
+							<h3 class="offcanvas-title" id="offcanvasExampleLabel">메세지
+								작성</h3>
 							<br> <br>
 							<button type="button" class="btn-close text-reset"
 								data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -221,7 +212,7 @@
 
 
 							<div class="row">
-								<h4>메세지 리스트</h4>
+								<h3>메세지 리스트</h3>
 
 
 								<table class="table text-center" id="msgLL">
@@ -290,7 +281,7 @@
 
 
 
-</body>
+
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -71,6 +71,8 @@
 			<a href="/web/join.do" class="btn btn-light">회원가입</a>
 
 			<!-- 사용자가 패스워드등을 잘못 입력하는 경우에는 자동으로 다시 로그인 페이지로 이동하게 된다. -->
+			
+			</div>
 	</form>
 
 	<script

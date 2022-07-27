@@ -15,19 +15,62 @@
   font-style: normal;
 }
 
-h4, h3{
-  font-family: 'LeferiBaseType-BoldA';
-}
 
-*{
-  font-family: 'LeferiBaseType-RegularA';
-}
-
-
+/* 제보 리스트 시작 */
 
 .container {
+	
   padding: 2em;
 }
+
+
+#searchForm > table > thead > tr > td > div:nth-child(2) > label {
+	font-weight: normal ;
+}
+
+
+#searchForm > table > thead > tr > td > div:nth-child(1) > label{
+	font-weight: normal ;
+}
+
+
+
+#report_s_r , #searchForm > table > tbody > tr:nth-child(1) > td > select{
+	
+	font-size : 20px;
+	
+    width: 100%;
+    height: 42px;
+    padding: 8px 11px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+}
+
+
+
+#imgsize > div > div:nth-child(1) > div > div > div.col-md-4 > a > img{
+	max-width: 100%;
+    height: 190px;
+}
+
+
+#imgsize > div > div:nth-child(2) > div > div > div.col-md-4 > a > img{
+	
+	max-width: 100%;
+    height: 190px;
+}
+
+
+
+/* 제보 리스트 끗 */
+
+
+
 
 /* GENERAL BUTTON STYLING */
 button,
@@ -111,7 +154,10 @@ button:hover {
 /* 페이징 */
 
 .paging {
-  margin-top: 30px;
+	display : block;
+	position : relative;
+  bottom: 200px;
+  right : 40px;
   text-align: center;
   font-size: 0;
 }
@@ -174,7 +220,7 @@ button:hover {
 /* 검색결과가 없을때 css */
 
 
-#resultnone {
+p1  {
 	  text-align: center;
 	  display: block;
 	  position : relative;
@@ -183,16 +229,26 @@ button:hover {
 }
 
 
-#resultnone > img {
-	width : 120px;
-	height : 100px;
-	margin-bottom : 15px;
-	
-	margin-top :30px;
+#noneimg {
+	width : 200px;
+	height : 200px;
+	margin-bottom : 40px;
+	margin-left : 35%;
+	margin-top :0px;
+	padding : 10px;
 }
 
  #p1 {
+ margin-right : 80px;
 	font-size :20px;
+	text-align : center;
+}
+
+
+#p2 {
+	margin-right : 80px;
+	
+	text-align : center;
 }
 
  /* 끝 */
@@ -204,5 +260,34 @@ h4 a#reportB{
 	 font-family: 'LeferiBaseType-BoldA';
 	
 } 
+ 
+ 
+ 
+ /* 제보 상세 페이지 */
+ 
+#fh5co-wrapper > div.container > div.row.info > div.col-md-4.reportPhoto{
+	
+}
+ 
+ 
+ 
+ #fh5co-wrapper > div.container > div.row.info > div.col-md-7.table_text {
+ 
+ 
+ border-color: #777;
+ }
+
+ 
+ 
+ #noneimg
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  

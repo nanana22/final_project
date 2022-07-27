@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>제보게시판 검색결과</title>
-<link rel="stylesheet" href="./resources/css/report.css">
+<link rel="stylesheet" href="./resources/main/css/report.css">
 
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -53,7 +53,7 @@
 		<!--action="reportSearch.do"  -->
 		<form id="searchForm" action="reportSearch.do" name="f" method="post">
 
-			<h4>실종아동 검색</h4>
+			<h3>실종아동 검색</h3>
 			<hr>
 
 			<table class="table table-borderless">
@@ -167,7 +167,7 @@
 
 
 	<div class="container">
-		<h4><a id="reportB" href="/web/reportList.do">등록 리스트</a>   >   검색결과</h4>
+		<h3><a id="reportB" href="/web/reportList.do">등록 리스트</a>   >   검색결과</h3>
 		<hr>
 		<br>
 		<!-- <div id="child_list">
@@ -181,9 +181,9 @@
 				if(list.isEmpty()){
 					System.out.println(list);%>
 					<div id="resultnone">
-					<img src="./resources/img/searchnoting.png">
+					<img id="noneimg" src="/web/resources/main/images/nothing.png">
 					<p id="p1">검색결과가 없습니다.</p>
-					<p>이름이나 특징이 정확한지 다시한번 확인 부탁드립니다.</p>
+					<p id="p2">이름이나 특징이 정확한지 다시한번 확인 부탁드립니다.</p>
 					</div>
 				
 				<%}else{
@@ -246,7 +246,6 @@
 
 				</div>
 
-			</div>
 	</div>
 	
 

@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>제보게시판 리스트</title>
-<link rel="stylesheet" href="./resources/css/report.css">
+<link rel="stylesheet" href="./resources/main/css/report.css">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -37,14 +37,16 @@
 <link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
+
 </head>
 <body>
 <%@ include file="header.jsp" %>
-		<div class="container">
+
+		<div class="container class="selecthead">
 		<!--action="reportSearch.do"  -->
 			<form id="searchForm" action="reportSearch.do" name="f" method="post">
 
-				<h4>실종아동 검색</h4>
+				<h3>실종아동 검색</h3>
 				<hr>
 
 				<table class="table table-borderless">
@@ -75,7 +77,7 @@
 							<!-- <td> <label for="firstName" class="form-label">실종일자</label> <select class="form-select"  aria-label="Default select example name="yy" id="year" style="width: 100px;"></select>
                                         <select class="form-select text-center" aria-label="Default select example name="mm" id="month" style="width: 100px;"></select>
                                         <select class="form-select text-center" aria-label="Default select example name="dd" id="day" style="width: 100px;"></select></td> -->
-						<td><select name="report_region" class="form-select"
+						<td><select name="report_region" class="form-select" id="report_s_r"
 							aria-label="Default select example">
 								<option selected value="all">발견 지역</option>
 								<option value="서울특별시">서울특별시</option>
@@ -156,7 +158,7 @@
 				</div>
 
 			</div>
-		</div>
+
 
 
 

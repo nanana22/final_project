@@ -262,13 +262,22 @@ figure {
   }
 }
 .fh5co-cover .desc {
-  top: 40%;
+  top: 28%;
   position: absolute;
   width: 100%;
   margin-top: -80px;
   z-index: 2;
   color: #fff;
 }
+
+
+#fh5co-page > div > div.fh5co-cover > div > div > div > div.desc2.animate-box.fadeInUp.animated > div {
+	top: 100px;
+	left:200px;
+	position: relative;
+	position : block;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-cover .desc {
     padding-left: 15px;
@@ -2100,3 +2109,9 @@ div.cs-select span {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
