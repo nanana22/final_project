@@ -17,13 +17,13 @@ public class BoardFindRestController {
 	@Autowired
 	BoardFindMapper mapper;
 	
-	//리스트
-	@RequestMapping("/boardFindList.do")
-	public List<BoardFind> boardFindList() {
-		System.out.println("컨트롤러 들옴!");
-		List<BoardFind> findList = mapper.boardFindList();
-		System.out.println(findList);
-		return findList;
-	}
+	//리스트>> ajax 안쓰려고...
+//	@RequestMapping("/boardFindList.do")
+//	public List<BoardFind> boardFindList() {
+//		System.out.println("컨트롤러 들옴!");
+//		List<BoardFind> findList = mapper.boardFindList();
+//		System.out.println(findList);
+//		return findList;
+//	}
 	
 }

@@ -1,3 +1,5 @@
+<%@page import="java.util.List"%>
+<%@page import="com.smhrd.domain.BoardFind"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -40,7 +42,11 @@
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 </head>
 <body>
+
+
+
 	<%@ include file="header.jsp"%>
+	<% List<BoardFind> list = (List<BoardFind>)request.getAttribute("list");%>
 
 	<div class="container">
 		<form name="f" action="findSearch.do" method="post">
@@ -158,20 +164,76 @@
 		</div>
 		<div id="child_list">
 		<!-- ajax로 표현할 곳 -->
+		<%for( BoardFind bf : list){ %>
+			<div class="row">
+	            
+	            
+	            <div class="col-sm-4"><a href="/web/boardFindView.do/<%=bf.getFind_seq() %>">
+	                <img src="<%=bf.getReal_face() %>" class="card-img-top" alt="..."></a>
+	            </div>
+	            <div class="col-sm-4"><a href="/web/boardFindView.do/<%=bf.getFind_seq() %>">
+	                <img src="<%=bf.getDeep_result() %>" class="card-img-top" alt="..."></a>
+	            </div>
+	            
+	            <div class="col-sm-4">
+	                <div class="card">
+	                    <div class="card-body text-center" style="height: 400px;">
+	                        <br>
+	                        <br>
+	                        <h5 class="card-title"><%=bf.getFind_name() %></h5>
+	                        <br>
+	                        <h6 class="card-subtitle mb-2 text-muted">실종일자 : <%=bf.getMissing_date() %></h6>
+	        
+	                        <h6 class="card-subtitle mb-2 text-muted">실종지역 : <%=bf.getMissing_region() %></h6>
+	        
+	        
+	        
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <br> <br>
+		
+		<%}%>
 		</div>
 
 
 
 
 		<!-- 리스트 페이지영역 -->
-		<div class="paging">
+		
+			<div class="container">
+			<div class="paging">
+			
+			
+			
+				<c:if test="${pagination.prev}">
+					<a class="bt" href="#"	onClick="fn_prev('${pagination.page}', '${pagination.range}', '${pagination.rangeSize}')">
+					Previous</a>
+					
+				</c:if>
+				
+				
+				
+				<c:forEach begin="${pagination.startPage}" end="${pagination.endPage}" var="idx">
+					<a class="num" href="#"	onClick="fn_pagination('${idx}', '${pagination.range}', '${pagination.rangeSize}')" <c:out value="${pagination.page == idx ? 'active' : ''}"/> ">
+					${idx} </a>
+				</c:forEach>
+				
+				
+				
+				<c:if test="${pagination.next}">
+					<a class="bt"  href="#"	onClick="fn_next('${pagination.range}', '${pagination.range}', '${pagination.rangeSize}')" >
+					Next</a>
+					
+				</c:if>
+				
+				
+				
+				
+			</div>
+			</div>
 
-			<a href="#" class="bt">이전</a> <a href="#" class="num on">1</a> <a
-				href="#" class="num">2</a> <a href="#" class="num">3</a> <a href="#"
-				class="num">4</a> <a href="#" class="num">5</a> <a href="#"
-				class="bt">다음</a>
-
-		</div>
 	</div>
 
 
@@ -192,7 +254,9 @@
 		crossorigin="anonymous"></script>
 
 
-	<script type="text/javascript" src="/web/resources/js/boardFindList.js"></script>
+
+<script type="text/javascript" src="/web/resources/js/pagingButton.js"></script>
+
 <%@ include file="footer.jsp"%>
 	
 </body>

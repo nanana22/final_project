@@ -20,12 +20,12 @@
     
     
     <!-- 민지 리스트 -->
-    <select id="boardFindList" resultType="com.smhrd.domain.BoardFind">
+<!--     <select id="boardFindList" resultType="com.smhrd.domain.BoardFind">
         SELECT f.find_name, f.missing_date, f.find_seq, f.missing_region, r.real_face, d.deep_result
         FROM TBL_FINDING f, TBL_FACE r, TBL_DEEP d
         WHERE f.user_id = r.user_id
         AND f.find_seq = d.find_seq
-    </select>
+    </select> -->
     
     
     
@@ -65,5 +65,23 @@
 		<if test="find_desc != null">
 			AND f.find_desc LIKE CONCAT('%',#{find_desc},'%')</if>
 	</trim>
+	
     </select>
+    
+    
+    
+    <!--  민지테스트(목록 조회) -->
+	<select id="boardFindList" parameterType="com.smhrd.domain.Pagination" resultType="com.smhrd.domain.BoardFind">
+	    SELECT *
+	    FROM TBL_FINDING f, TBL_FACE r, TBL_DEEP d
+	    WHERE f.user_id = r.user_id
+        AND f.find_seq = d.find_seq
+	    LIMIT #{startList}, #{listSize}
+	</select>
+	
+	<!--  민지테스트(전체글 개수 조회) -->
+	<select id="boardFindCnt" resultType="int"> 
+	    SELECT count(*) as listCnt 
+	    FROM TBL_FINDING	
+	</select>
 </mapper>

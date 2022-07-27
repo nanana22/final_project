@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,6 +21,7 @@ import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File;
 import com.smhrd.domain.BoardFind;
 import com.smhrd.domain.BoardReport;
 import com.smhrd.domain.Face;
+import com.smhrd.domain.Pagination;
 import com.smhrd.mapper.BoardFindMapper;
 
 @Controller
@@ -80,8 +82,26 @@ public class BoardFindController {
 
 	
 	//민지 리스트
+//	@RequestMapping("/findList.do")
+//	public String findList() {
+//		return "findList";
+//	}
+	
+	
+	//민지 페이징
 	@RequestMapping("/findList.do")
-	public String findList() {
+	public String getBoardList(Model model , 
+			@RequestParam(required = false, defaultValue = "1") int page, 
+			@RequestParam(required = false, defaultValue = "1") int range) throws Exception{
+		//전체 게시글 개수		
+		int listCnt = mapper.boardFindCnt();
+		
+		//Pagination 객체생성
+		Pagination pagination = new Pagination();
+		pagination.pageInfo(page, range, listCnt);
+		
+		model.addAttribute("pagination", pagination);
+		model.addAttribute("list", mapper.boardFindList(pagination));		
 		return "findList";
 	}
 	
