@@ -1,7 +1,5 @@
 $(document).on('click','#onLogMsg',function(){
 		
-    alert( $('#sender').val())
-    alert("안뇽")
     $.ajax({
         url: '/web/messageReceive.do',
         type: 'post',
@@ -10,7 +8,6 @@ $(document).on('click','#onLogMsg',function(){
         },
         success: function(res){
             
-            alert( '들어옴')
             $('#msgList').html('');
             for(let i =0; i<res.length; i++){
                 tr=`<tr>

@@ -6,8 +6,14 @@ $(document).on('click','#toastStart',function(){
         type: 'post',
         data: $('#msgForm').serialize(),
         success: function(rs){
-            alert("들어옴")
-            alert(rs);
+        
+            Swal.fire({
+				//    position: 'top-end',
+				icon : 'success',
+				title : '메세지 전송 성공',
+				showConfirmButton : false,
+				timer : 1500
+			})
         },
         error: function(e){
 
@@ -15,12 +21,6 @@ $(document).on('click','#toastStart',function(){
     })
     
     
-    Swal.fire({
-				//    position: 'top-end',
-				icon : 'success',
-				title : '메세지 전송 성공',
-				showConfirmButton : false,
-				timer : 1500
-			})
+
 
 })

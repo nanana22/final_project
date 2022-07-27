@@ -62,8 +62,13 @@ public class UserController {
 	// 회원가입
 	@RequestMapping("/userJoin.do")
 	public String userJoin(User us) {
-		mapper.userJoin(us);
+		int cnt = mapper.userJoin(us);
+		if(cnt != 0) {
+			System.out.println("회원가입 성공");
+			return "joinSuccess";
+		}else {
+			return "joinForm";
+		}
 		
-		return "joinSuccess";
 	}
 }
