@@ -332,12 +332,12 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive"
+						<a href="/web/helpFilter.do"><img class="img-responsive"
 							src="/web/resources/main/images/place-1.jpg" alt=""></a>
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
-									<a href="#">스티커로 인상착의 변환</a>
+									<a href="/web/helpFilter.do">스티커로 인상착의 변환</a>
 								</h3>
 								<span class="posted_by"></span>
 								<!-- <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span> -->
@@ -345,7 +345,7 @@
 									물망초의 "미래 얼굴 예측 기술"을 통해<br> 장기실종아동의 찾기에 도움을 줍니다.
 								</p>
 								<p>
-									<a href="#">사진필터페이지로 이동</a>
+									<a href="/web/helpFilter.do">사진필터페이지로 이동</a>
 								</p>
 							</div>
 						</div>
@@ -354,12 +354,12 @@
 				<div class="clearfix visible-sm-block"></div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive"
+						<a href="/web/helpPrintFirst.do"><img class="img-responsive"
 							src="/web/resources/main/images/place-1.jpg" alt=""></a>
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
-									<a href="#">손쉬운 전단지제작</a>
+									<a href="/web/helpPrintFirst.do">손쉬운 전단지제작</a>
 								</h3>
 								<span class="posted_by"></span>
 								<!-- <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span> -->
@@ -367,7 +367,7 @@
 									전단지제작 폼을 제공하여 쉽게 <br>전단지를 만들수있도록 도움을 줍니다.
 								</p>
 								<p>
-									<a href="#">전단지제작페이지로 이동</a>
+									<a href="/web/helpPrintFirst.do">전단지제작페이지로 이동</a>
 								</p>
 							</div>
 						</div>

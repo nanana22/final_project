@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Happiness-Sans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  *{
+    font-family: 'Happiness-Sans-Regular';
+  }
+  
+  h2, h4{
+    font-family: 'Happiness-Sans-Title';
+  
+  }
+
+
+
+
+
+    
+
+ 
+
+    .tab > p {
+        font-size: 100px;
+    }
+
+
+
+
+
+
+
+/* 사진업로드 버튼 */
+
+    .file-label {
+        font-size: 20px;
+        display: block;
+        position: relative;
+        left: 100px;
+        top: 30px;
+        background-color: #6c757d;;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 190px;
+        height: 50px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      .file {
+        display: none;
+      }
+
+
+
+/* 안경 이미지 */
+#my-image{
+    width: 100px;
+    height: 80px;
+}
+
+
+#my-image1{
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+
+}
+
+#my-image2{
+    display: block;
+    position: relative;
+    left:300px;
+    bottom : 100px;
+    width: 200px;
+    height: 100px;
+
+    
+
+}
+#my-image3{
+    display: block;
+    position: relative;
+    left: 570px;
+    bottom : 220px;
+    margin-top: 20px;
+    width: 210px;
+    height: 100px;
+
+}
+
+#my-image4{
+    display: block;
+    position: relative;
+    right: 10px;
+    bottom : 180px;    
+    width: 220px;
+    height: 150px;
+
+}
+
+#my-image5{
+    display: block;
+    position: relative;
+    left: 280px;
+    bottom : 350px;
+    width: 210px;
+    height: 180px;
+
+}
+
+#my-image6{
+    display: block;
+    position: relative;
+    left: 570px;
+    bottom : 530px;
+    width: 190px;
+    height: 170px;
+
+}
+
+
+/* 마스크이미지 */
+
+#mmy-image1 {
+        margin: 40px;
+        display: block;
+        position: relative;
+        width: 170px;
+        height: 110px;
+}
+
+
+#mmy-image2 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 165px;
+    height: 120px;
+    left : 180px;
+    bottom: 140px;;
+}
+
+#mmy-image3 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 165px;
+    height: 130px;
+    left : 360px;
+    bottom: 300px;;
+}
+
+#mmy-image4 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 160px;
+    left : 540px;
+    bottom: 490px;;
+}
+
+#mmy-image5 {
+
+    display: block;
+    position: relative;
+    width: 240px;
+    height: 170px;
+    bottom: 520px;
+
+}
+
+#mmy-image6 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left : 140px;
+    bottom: 710px;;
+}
+
+
+#mmy-image7 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left : 320px;
+    bottom: 910px;;
+}
+
+#mmy-image8 {
+    margin: 40px;
+    display: block;
+    position: relative;
+    width: 205px;
+    height: 140px;
+    left : 540px;
+    bottom: 1100px;;
+}
+
+
+/* .tabb{
+    display: block;
+    position: relative;
+    left: 600px;
+    bottom: 600px;
+    
+
+}
+*/
+
+.filterA{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    padding: 6px;
+
+    display: block;
+    position: relative;
+    left: 100px;
+
+    width: 1000px;
+
+}
+
+
+
+.mask{
+    display: block;
+    position: relative;
+    left : 250px;
+}
+
+.cap{
+    display: block;
+    position: relative;
+    left : 250px;
+}
+
+
+
+
+.row1{
+    margin-left:300px;
+}
+
+.row2{
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+.bts1{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 5px;
+
+}
+.bts2{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+
+}
+

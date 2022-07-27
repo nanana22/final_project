@@ -26,7 +26,7 @@
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
-								<li class="active"><a href="#">Home</a></li>
+								<li class="active"><a href="/web">Home</a></li>
 
 
 
@@ -34,8 +34,8 @@
 								<li><a href="/web/reportList.do">제보하기</a></li>
 								<li><a href="#" class="fh5co-sub-ddown">도움마당</a>
 									<ul class="fh5co-sub-menu">
-										<li><a href="#">사진 필터</a></li>
-										<li><a href="#">전단지 제작</a></li>
+										<li><a href="/web/helpFilter.do">사진 필터</a></li>
+										<li><a href="/web/helpPrintFirst.do">전단지 제작</a></li>
 										<li><a href="#">대책법</a></li>
 
 									</ul></li>
@@ -46,14 +46,15 @@
 									
 									
 								<c:choose>
+								
 									<c:when test="${empty user }">
-										<li class="log"><a href="/web/loginCk.do">로그인</a></li>
+										<li class="log"><a href="/web/userlog.do">로그인</a></li>
 										<li class="log"><a href="/web/join.do">회원가입</a></li>
 									</c:when>
 								
 									<c:otherwise>
-										<% User user = (User)session.getAttribute("user"); %>
-										<li class="log"><a href="#">${user.user_nick}님</a></li>
+									<% User user = (User)session.getAttribute("user"); %>
+										<li class="log"><a href="#">${user.user_id}님</a></li>
 										<li class="log"><a href="/web/logOut.do">로그아웃</a></li>
 									</c:otherwise>
 								
