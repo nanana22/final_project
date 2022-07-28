@@ -8,10 +8,13 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.mysql.cj.Session;
 import com.smhrd.domain.BoardReport;
+import com.smhrd.domain.User;
 import com.smhrd.mapper.BoardReportMapper;
 
 @Controller
@@ -35,7 +38,7 @@ public class BoardReportController {
 		return "reportView";
 	}
 	
-	//검색 구현
+	// 검색 구현
 	@RequestMapping("/reportSearch.do")
 	public String reportSearchList(BoardReport vo, HttpServletRequest request) {
 		HttpSession session = request.getSession();
@@ -49,10 +52,37 @@ public class BoardReportController {
 
 	}
 	
-	//검색 결과 페이지
+	// 검색 결과 페이지
 	@RequestMapping("/searchResult.do")
 	public String searchList() {
 		return "reportSearchList";
+	}
+	
+	// reportWrite.jsp로 이동
+	@RequestMapping("/reportForm.do")
+	public String reportForm(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		User user = (User)session.getAttribute("user");
+		if(user != null) {
+			System.out.println("로그인 했음");
+			return "reportWrite";
+
+		}else {
+			System.out.println("로그인 기록 없음");
+			return "redirect:/userlog.do";
+		}
+	}
+	
+	// 글 작성
+	@RequestMapping("/reportWrite.do")
+	public String reportWrite(BoardReport vo) {
+		System.out.println("글 작성 시도");
+		System.out.println(vo);
+		mapper.boardReportWrite(vo);
+		BoardReport seq = mapper.boardReportSeq(vo);
+		System.out.println(seq);
+		System.out.println(seq.getReport_seq());
+		return "redirect:/boardReportView.do/"+ seq.getReport_seq();
 	}
 
 }

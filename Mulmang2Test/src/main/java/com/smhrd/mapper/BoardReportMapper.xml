@@ -37,4 +37,17 @@
 	</trim>
 	</select>
 	
+	<!-- 작성기능 -->
+	<insert id="boardReportWrite" parameterType="com.smhrd.domain.BoardReport">
+	    INSERT INTO TBL_REPORT(user_id, person_name, gender, report_region, report_date, report_feature, report_look, report_desc, report_photo)
+	    VALUES (#{user_id}, #{person_name}, #{gender}, #{report_region}, #{report_date}, #{report_feature}, #{report_look}, #{report_desc}, #{report_photo})
+	</insert>
+	
+	<select id="boardReportSeq" parameterType="com.smhrd.domain.BoardReport" resultType="com.smhrd.domain.BoardReport">
+	    SELECT * FROM TBL_REPORT
+	    WHERE person_name = #{person_name}
+	    AND report_feature = #{report_feature}
+	    AND report_desc = #{report_desc}
+	</select>
+	
 </mapper>
