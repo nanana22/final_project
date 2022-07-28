@@ -72,7 +72,7 @@
       <div class="row">
          <div class="col">
             <div class="card" style="width: 18rem;">
-               <img src="${findView.real_face }" class="card-img-top" alt="...">
+               <img src="${face }" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text" style="text-align: center;">당시 모습</p>
                </div>
@@ -81,7 +81,7 @@
          <div class="col-md-1"></div>
          <div class="col">
             <div class="card" style="width: 18rem;">
-               <img src="${findView.deep_result}" class="card-img-top" alt="...">
+               <img src="${deep}" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text" style="text-align: center;">현재 33살 추정모습</p>
                </div>

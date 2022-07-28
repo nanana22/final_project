@@ -86,12 +86,12 @@
 	</select>
 	
 	<!-- 당시 사진 출력 -->
-	<select id="boardFindFace" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.Face">
+	<select id="boardFindFace" parameterType="com.smhrd.domain.BoardFind" resultType="String">
 	    SELECT real_face FROM TBL_FACE WHERE find_seq = #{find_seq}
 	</select>
 	
 	<!-- 딥러닝 사진 출력 -->
-	<select id="boardFindDeep" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.Deep">
+	<select id="boardFindDeep" parameterType="com.smhrd.domain.BoardFind" resultType="String">
 	    SELECT deep_result FROM TBL_DEEP WHERE find_seq = #{find_seq}
 	</select>
 </mapper>

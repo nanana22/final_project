@@ -111,8 +111,13 @@ public class BoardFindController {
 		System.out.println("상세페이지 컨트롤러");
 		System.out.println(find_seq);
 		BoardFind vo = mapper.boardFindView(find_seq);
+		String deep = mapper.boardFindDeep(vo);
+		String face = mapper.boardFindFace(vo);
 		model.addAttribute("findView", vo);
+		model.addAttribute("deep", deep);
+		model.addAttribute("face", face);
 		System.out.println(vo);
+		System.out.println(deep);
 		return "findView";
 	}
 	
