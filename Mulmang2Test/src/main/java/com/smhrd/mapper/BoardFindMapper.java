@@ -32,9 +32,13 @@ public interface BoardFindMapper {
 	// 게시글 검색
 	public List<BoardFind> boardFindSearch(BoardFind vo);
 	
-	//민지 총 게시글 개수 확인
+	// 민지 총 게시글 개수 확인
 	public int boardFindCnt() throws Exception;
 	
-	//민지 목록 조회
+	// 민지 목록 조회
 	public List<BoardFind> boardFindList(Pagination vo);
+	
+	// 사진 출력
+	public List<BoardFind> boardFindFace(BoardFind vo);
+	public String boardFindDeep(BoardFind vo);
 }

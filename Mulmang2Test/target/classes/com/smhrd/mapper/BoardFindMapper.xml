@@ -84,4 +84,14 @@
 	    SELECT count(*) as listCnt 
 	    FROM TBL_FINDING	
 	</select>
+	
+	<!-- 당시 사진 출력 -->
+	<select id="boardFindFace" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.Face">
+	    SELECT real_face FROM TBL_FACE WHERE user_id = #{user_id}
+	</select>
+	
+	<!-- 딥러닝 사진 출력 -->
+	<select id="boardFindDeep" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.Deep">
+	    SELECT deep_result FROM TBL_DEEP WHERE find_seq = #{find_seq}
+	</select>
 </mapper>
