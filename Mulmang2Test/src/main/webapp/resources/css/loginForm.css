@@ -18,7 +18,7 @@ body {
 }
 
 #login{
-  font-family: 'Noto Sans KR', sans-serif;
+
   font-size: 30px;
   text-align: center;
   margin-top: 15px;
@@ -143,5 +143,43 @@ textarea{
 
 #loginDiv{
   text-align: center;
+ 
+  
 }
 
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#LogForm{
+	
+	
+	margin-top : 100px;
+	margin-bottom : 300px;
+}
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#loglog {
+	font-family: 'GmarketSansMedium';
+	font-size : 15px;	
+    color: #555;
+	width: 110px;
+}
+
+#joinjoin {
+	font-family: 'GmarketSansMedium';
+	font-size : 15px;	
+    color: #555;
+    width: 110px;
+}

@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 
-<link rel="stylesheet" href="./resources/css/joinForm.css">
+<link rel="stylesheet" href="./resources/css/joinForm.css?ver1">
 <style type="text/css"></style>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-latest.js"></script>
@@ -49,7 +49,7 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<form action="userJoin.do" method="POST">
-
+		<div id="JOINDIV">
 		<div id="joinTt">회원가입</div>
 
 
@@ -98,17 +98,16 @@
 
 
 				<br>
-				<button type="submit" class="btn btn-light">회원가입</button>
+				<button id="joinJO" type="submit" class="btn btn-light">회원가입</button>
+</div>
 
-				<!-- <div id="joinDiv">
-          <button id="joinBtn" type="submit" name="button">가입하기</button>
-        </div> -->
+				
 	</form>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
-	<%@ include file="footer.jsp"%>
+	
 </body>
 </html>

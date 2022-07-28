@@ -250,4 +250,115 @@ width: 200px;
 
 
 
+/* 실종아동 찾기 상세 페이지 */
 
+#findIDDATE > div.col-sm-2{
+	display : block;
+	position : relative;
+	left : 73%;
+}
+
+#findIDDATE > div.col-sm-1 {
+	
+	display : block;
+	position : relative;
+	left : 75%;
+	
+}
+
+#findInfo {
+	margin-left : 43%;
+	margin-top : 50px;
+}
+
+
+
+
+
+
+
+#findInfo > div > form > div > div:nth-child(1),
+#findInfo > div > form > div > div:nth-child(3),
+#findInfo > div > form > div > div:nth-child(5),
+#findInfo > div > form > div > div:nth-child(7),
+#findInfo > div > form > div > div:nth-child(9),
+#findInfo > div > form > div > div:nth-child(11){	
+	position : relative ;
+	display : block;
+	right : 100px;
+}
+
+
+
+#warning {
+ text-align : center;	
+ border : 1px solid #777;
+ height: 142px;
+    padding: 14px;
+	
+}
+
+
+
+#fh5co-wrapper > div.container > div:nth-child(6) > div {
+	
+	
+    border: 1px solid #CCC;
+    height: 300px;
+    color: #777;
+}
+
+#findmsList {
+	display : block;
+	position : relative;
+	left :40%;
+	margin-top : 80px;
+}
+
+
+#offcanvasExample{
+	width : 750px;
+	padding : 24px;
+		
+	
+}
+
+
+#look{
+	margin-bottom : 5px;
+}
+
+
+#toastStart {
+	width : 150px;
+	height : 40px;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	font-size : 16px;
+	    font-family: 'GmarketSansMedium';
+	
+}
+
+
+#msgLL > thead > tr > th {
+	text-align : center;
+	font-family: 'GmarketSansMedium';
+}
+
+
+#offcanvasExample > div.offcanvas-body > div.container > div {
+	
+	display: block;
+    position: relative;
+    right: 205px;
+}
+
+
+#fh5co-wrapper > div.container > h3 {
+    display: block;
+    position: relative;
+    top: 63px;
+    font-size: 30px;
+}
+	
+}

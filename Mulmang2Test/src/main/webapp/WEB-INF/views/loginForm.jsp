@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>로그인</title>
 
-<link rel="stylesheet" href="./resources/css/loginForm.css">
+<link rel="stylesheet" href="./resources/css/loginForm.css?Ver1">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -46,8 +46,8 @@
 <body>
 	<%@ include file="header.jsp"%>
 	<form action="loginCk.do" method="POST">
-
-		<div id="login">로그인</div>
+<div id=LogForm>
+		<h1 id="login">로그인</h1>
 
 		<div class="info_login">
 
@@ -67,12 +67,13 @@
 
 
 			<div></div>
-			<button type="submit" class="btn btn-light">로그인</button>
-			<a href="/web/join.do" class="btn btn-light">회원가입</a>
+			<button type="submit" class="btn btn-light" id="loglog">로그인</button>
+			<a href="/web/join.do" class="btn btn-light" id="joinjoin">회원가입</a>
 
 			<!-- 사용자가 패스워드등을 잘못 입력하는 경우에는 자동으로 다시 로그인 페이지로 이동하게 된다. -->
 			
 			</div>
+</div>
 	</form>
 
 	<script
