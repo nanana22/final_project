@@ -39,6 +39,6 @@ public interface BoardFindMapper {
 	public List<BoardFind> boardFindList(Pagination vo);
 	
 	// 사진 출력
-	public List<BoardFind> boardFindFace(BoardFind vo);
+	public String boardFindFace(BoardFind vo);
 	public String boardFindDeep(BoardFind vo);
 }
