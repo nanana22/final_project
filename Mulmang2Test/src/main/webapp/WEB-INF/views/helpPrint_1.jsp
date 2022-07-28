@@ -13,7 +13,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_1.css">
+<link rel="stylesheet" href="/web/resources/css/helpPrint_1.css?ver1">
 <style>
 .print_btn {
 	display: block;
@@ -43,16 +43,16 @@
 <body>
 
 <%@ include file="header.jsp" %>
-	<div class="container">
+	<div class="container" id="PRINTINFO">
 		<div class="row">
-			<h4 class="mb-3">전단지 제작하기</h4>
+			<h3 class="mb-3">전단지 제작하기</h3>
 
 			<h7 class="'mb-3">1.기본 정보 입력 > 2.사진 넣기</h7>
 			<hr class="my-4">
 		</div>
 
 		<!-- 글쓰기 폼 -->
-		<div class="col-md-7 col-lg-8 print1">
+		<div class="col-md-7 col-lg-8 print1" id="PRINTINFO">
 			<form action="helpPrintSecond.do" method="post" class="needs-validation" novalidate="">
 				<div class="row g-3">
 					<div class="col-sm-1">이름</div>
@@ -107,26 +107,9 @@
 					</div>
 
 					<div class="col-sm-4">
-						<select class="form-select" aria-label="Default select example"
-							name="region">
-								<option selected value="all">발견 지역</option>
-								<option value="서울특별시">서울특별시</option>
-								<option value="경기도">경기도</option>
-								<option value="강원도">강원도</option>
-								<option value="충청북도">충청북도</option>
-								<option value="충청남도">충청남도</option>
-								<option value="경상남도">경상남도</option>
-								<option value="경상북도">경상북도</option>
-								<option value="전라남도">전라남도</option>
-								<option value="전라북도">전라북도</option>
-								<option value="대전광역시">대전광역시</option>
-								<option value="대구광역시">대구광역시</option>
-								<option value="부산광역시">부산광역시</option>
-								<option value="광주광역시">광주광역시</option>
-								<option value="인천광역시">인천광역시</option>
-
-						</select>
-						<input type="text" placeholder="상세주소" name="regionDt">
+						<input type="text" class="form-control" id="regionDt"
+							placeholder="___도  __ 시 __ 동" name="name" value="" required="">
+				
 					</div>
 
 
@@ -166,12 +149,13 @@
 				</div>
 				<div class="col print_btn">
 				
-					<button type="submit" class="btn btn-secondary" style="width: 130px;">다음</button>
+					<button type="submit" id="printB" class="btn btn-secondary" style="width: 150px;">다음</button>
 				</div>
 			</form>
 		</div>
+		
+		</div>
 
-	</div>
 
 
 

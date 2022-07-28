@@ -12,8 +12,8 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_1.css">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css">
+<link rel="stylesheet" href="/web/resources/css/helpPrint_1.css?ver3">
+<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver3">
 
 
 
@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="/web/resources/main/css/cs-select.css">
 <link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
 
-<link rel="stylesheet" href="/web/resources/main/css/style.css">
+<link rel="stylesheet" href="/web/resources/main/css/style.css?ver1">
 </head>
 <body>
 <%@ include file="header.jsp" %>
@@ -54,7 +54,7 @@
 <% Print print = (Print)request.getAttribute("print"); %>
 	<div class="container j">
 		<div class="row">
-			<h2 class="mb-3">전단지 제작하기</h2>
+			<h3  id="print2T" class="mb-3">전단지 제작하기</h3>
 
 			<h4 class="'mb-3">1.기본 정보 입력 > 2.사진 넣기</h4>
 			<hr class="my-4">
@@ -124,12 +124,12 @@
 
 				<form>
 					<fieldset>
-						<legend><%=print.getName() %> (현재 추정나이 :30)</legend>
+						<legend><%=print.getName() %></legend>
 
 
 						<label for="" class="infoadd">○ 실종일자 : <%=print.getDate() %></label><br />
 
-						<label for="" class="infoadd">○ 실종장소 : <%=print.getRegion() %> <%=print.getRegionDt() %></label><br />
+						<label for="" class="infoadd">○ 실종장소 : 경상남도 창원시 의창구 용호동 용지호수</label><br />
 
 						<label for="" class="infoadd">○ 신체특징 : <%=print.getFeature() %></label>
 					</fieldset>
@@ -157,8 +157,8 @@
 
 		<div class="row2">
 			<div class="row1" id="call">
-				<p>제보 : <%=print.getTel() %></p>
-				<p>물망초가 실종아동찾기에 함께합니다</p>
+				<p id="renum">제보 번호: <%=print.getTel() %></p>
+				<p id="mul">물망초가 실종아동찾기에 함께합니다</p>
 			</div>
 
 		</div>
@@ -173,12 +173,12 @@
 		<div class="row backB">
 
 			<div class="col-m-3 print2b_btn">
-				<button type="submit" class="btn btn-outline-secondary B1"
+				<button type="submit" class="btn btn-outline-secondary" id="bt11"
 					onClick="location.href='/web/helpPrintFirst.do'">이 전</button>
 			</div>
 
 			<div class="col-m-3 print2s_btn">
-				<button type="submit" class="btn btn-outline-secondary B2"
+				<button type="submit" class="btn btn-outline-secondary B2"  id="bt22"
 					onClick="location.href='help_print(2).html'">저 장</button>
 			</div>
 

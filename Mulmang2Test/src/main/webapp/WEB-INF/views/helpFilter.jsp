@@ -14,17 +14,21 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 
-<link rel="stylesheet" href="/web/resources/css/helpFilter.css">
+<link rel="stylesheet" href="/web/resources/css/helpFilter.css?ver2">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.min.js"></script>
 
 
+
+
 </head>
 <body>
+ 	
 
-	<div class="container">
-		<div class="row">
-			<h2 class="mb-3">인상착의 변환</h2>
+	<div class="container" >
+		<div class="row" id="headFIL">
+		<h3><a id="HOMEB" href="/web/">HOME</a>   >   인상착의변환</h3>
+			
 
 			<h7 class="'mb-3">안경과 마스크를 추가해 다양한모습을 예측할수있게 해줍니다</h7>
 			<!-- <h7 class="'mb-3">1. 파일 선택 > 2. 스티커 선택</h7> -->

@@ -13,12 +13,19 @@
     font-style: normal;
   }
   
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
   *{
     font-family: 'Happiness-Sans-Regular';
   }
   
   h2, h4{
-    font-family: 'Happiness-Sans-Title';
+   font-family: 'GmarketSansMedium';
   
   }
 
@@ -27,3 +34,35 @@
     margin-left: 20px;
     margin-bottom: 30px;
   }
+  
+  
+  
+  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(5) > label,
+  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(9) > label,
+  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(7) > label {
+  
+      font-weight: normal;
+  }
+  
+  
+  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(8) > input {
+  
+  }
+  
+  
+  
+ #PRINTINFO {
+ 		margin-top : 40px;
+ 		margin-left: 200px;
+ 		margin-bottom: 130px;
+ 
+ }
+ 
+ 
+ #printB{
+ display : block;
+ position : relative;
+ top : 30px;
+ right : 40px;
+
+ }

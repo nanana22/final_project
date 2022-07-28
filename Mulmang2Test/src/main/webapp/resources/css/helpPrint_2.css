@@ -22,6 +22,20 @@
     font-style: normal;
 }
 
+
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+#print2T {
+   font-family: 'GmarketSansMedium';
+  
+  }
+
+
 #head{
     font-family: 'Recipekorea';
     padding-top: 30px;
@@ -297,4 +311,14 @@ overflow: initial;
     bottom: 4px;
 
 
+}
+
+
+
+#mul , #renum {
+	
+	font-family: 'GmarketSansMedium';
+	
+	font-size : 20px;
+	color : #777:
 }
