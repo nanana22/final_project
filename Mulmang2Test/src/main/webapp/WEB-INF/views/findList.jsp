@@ -13,7 +13,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="./resources/css/find.css">
+<link rel="stylesheet" href="./resources/css/find.css?Ver4">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -49,13 +49,13 @@
 	<% List<BoardFind> list = (List<BoardFind>)request.getAttribute("list");%>
 
 	<div class="container">
-		<form name="f" action="findSearch.do" method="post">
+		<form id="findForm" name="f" action="findSearch.do" method="post">
 
 
-			<h4>실종아동 검색</h4>
+			<h3>실종아동 검색</h3>
 			<hr>
 
-			<table class="table table-borderless">
+			<table class="table table-borderless" id="find_table">
 				<thead>
 					<tr>
 						<th colspan="2" scope="col"><input type="text" name="find_name"
@@ -116,20 +116,15 @@
 
 					</tr>
 					<tr>
-						<td><label for="firstName" class="form-label">실종일자</label>
-						<td>
-							<div class="row">
-								<select class="form-select col-sm-2"
-									aria-label="Default select example name=" yy" id="year"
-									style="width: 100px;"></select> <select
-									class="form-select text-center  col-sm-2"
-									aria-label="Default select example name=" mm" id="month"
-									style="width: 100px;"></select> <select
-									class="form-select text-center  col-sm-2"
-									aria-label="Default select example name=" dd" id="day"
-									style="width: 100px;"></select>
-							</div>
-						</td>
+						<td> 
+						<label for="firstName" class="form-label">실종일자</label>
+                                                        
+                       </td>
+                       <td>
+                       
+                             <input type="date" name="MISSING_DATE"> 
+                       
+                       </td>
 
 					</tr>
 
@@ -159,7 +154,7 @@
 
 	<div class="container">
 		<div class="row">
-			<h4>등록리스트</h4>
+			<h3>실종아동 등록리스트</h3>
 			<hr>
 		</div>
 		<div id="child_list">
@@ -169,22 +164,22 @@
 	            
 	            
 	            <div class="col-sm-4"><a href="/web/boardFindView.do/<%=bf.getFind_seq() %>">
-	                <img src="<%=bf.getReal_face() %>" class="card-img-top" alt="..."></a>
+	                <img src="<%=bf.getReal_face() %>" class="card-img-top" alt="..." style="width : 85%;"></a>
 	            </div>
 	            <div class="col-sm-4"><a href="/web/boardFindView.do/<%=bf.getFind_seq() %>">
-	                <img src="<%=bf.getDeep_result() %>" class="card-img-top" alt="..."></a>
+	                <img src="<%=bf.getDeep_result() %>" class="card-img-top" alt="..." style="width : 85%;"></a>
 	            </div>
 	            
 	            <div class="col-sm-4">
 	                <div class="card">
-	                    <div class="card-body text-center" style="height: 400px;">
+	                    <div class="card-body text-center" style="height: 310px;">
 	                        <br>
 	                        <br>
-	                        <h5 class="card-title"><%=bf.getFind_name() %></h5>
+	                        <h5 class="card-title" id="f5"><%=bf.getFind_name() %></h5>
 	                        <br>
-	                        <h6 class="card-subtitle mb-2 text-muted">실종일자 : <%=bf.getMissing_date() %></h6>
+	                        <h6 class="card-subtitle mb-2 text-muted" id="f6">실종일자 : <%=bf.getMissing_date() %></h6>
 	        
-	                        <h6 class="card-subtitle mb-2 text-muted">실종지역 : <%=bf.getMissing_region() %></h6>
+	                        <h6 class="card-subtitle mb-2 text-muted" id="f6">실종지역 : <%=bf.getMissing_region() %></h6>
 	        
 	        
 	        

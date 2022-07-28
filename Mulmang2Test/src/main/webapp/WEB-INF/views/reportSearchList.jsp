@@ -167,7 +167,7 @@
 
 
 	<div class="container">
-		<h3><a id="reportB" href="/web/reportList.do">등록 리스트</a>   >   검색결과</h3>
+		<h3><a id="reportB" href="/web/reportList.do">제보 등록 리스트</a>   >   검색결과</h3>
 		<hr>
 		<br>
 		<!-- <div id="child_list">

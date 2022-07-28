@@ -129,7 +129,7 @@
 
 
 		<div class="container">
-			<h3>등록 리스트</h3>
+			<h3>제보 등록 리스트</h3>
 			<hr>
 			<br>
 			<div id="child_list">
