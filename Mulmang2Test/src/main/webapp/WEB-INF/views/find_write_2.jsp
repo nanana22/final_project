@@ -49,6 +49,7 @@
 <body>
 <%@ include file="header.jsp"%>
 
+
  <%User user_id = (User)session.getAttribute("user"); %>
  <%=user_id.getUser_id() %>
  	       

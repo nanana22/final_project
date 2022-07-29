@@ -35,6 +35,8 @@ public class UserController {
 		return "loginForm"; 
 	}
 	
+
+	
 	
 	// 로그인 체크
 	@RequestMapping("/loginCk.do")	
@@ -47,9 +49,10 @@ public class UserController {
 			//잠시 테스트로 수정함 -김훈겸
 	        HttpSession session = request.getSession();
 	        session.setAttribute("user", usif);
-			return "find_write_1"; 			
+			return "index"; 			
 		}
 	}
+	
 	
 	// 로그아웃
 	@RequestMapping("/logOut.do")

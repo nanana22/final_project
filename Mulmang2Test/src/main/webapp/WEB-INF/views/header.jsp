@@ -33,7 +33,7 @@
 								<li><a href="/web/findList.do">실종아동찾기</a>
 									<ul class="fh5co-sub-menu">
 										<li><a href="/web/findList.do">실종아동 목록</a></li>
-										<li><a href="/web/boardFindWrite1.do">실종아동 등록</a></li>
+										<li><a href="/web/findInsert.do">실종아동 등록</a></li>
 									</ul>
 								</li>
 								<li><a href="/web/reportList.do">제보하기</a>
@@ -54,10 +54,7 @@
 									</ul>
 								</li>
 									
-									
-									
-									
-									
+								
 									
 								<c:choose>
 								
