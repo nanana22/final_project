@@ -12,7 +12,12 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor //필요한 필드만 요소로 갖는 생성자
 
 public class Face {
+
 	@NonNull
 	private String real_face;
+	
 	private String user_id;
+	
+	
+
 }

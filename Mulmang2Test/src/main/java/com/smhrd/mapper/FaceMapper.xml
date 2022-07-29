@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--     <insert id="boardFindInsert2" parameterType="com.smhrd.domain.Face">
-        insert into TBL_FACE(USER_ID, REAL_FACE)
-        values(#{USER_ID}, #{REAL_FACE})
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.smhrd.mapper.FaceMapper">  
+      
+    <insert id="boardFindInsert2" parameterType="com.smhrd.domain.Face">
+        insert into TBL_FACE(user_id, real_face)
+        values(#{user_id}, #{real_face})
     </insert>
-     -->
+    
+   </mapper>

@@ -54,7 +54,7 @@ public class BoardFindController {
 		}else {
 			HttpSession session = request.getSession();
 		    //session.setAttribute("user", bfif);
-		    return "find_write_2"; 
+		    return "redirect:/uploadForm"; 
 		}
 		
 	}

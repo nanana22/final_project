@@ -20,11 +20,25 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-
-	<!-- fileupload -->
-<beans:bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
-	</beans:bean>
 	
+	<context:component-scan
+	    base-package="org.zerock.controller"  />
+	
+
+
+	<beans:bean id= "multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="utf-8"></beans:property>
+		<!-- 1024 * 1024 * 10 bytes 10MB -->
+		<beans:property name="maxUploadSize" value="104857560">
+		</beans:property>
+		<!-- 1024 * 1024 * 2 bytes 2MB -->
+		<beans:property name="maxUploadSizePerFile" value="2097152"></beans:property>		
+		<beans:property name="uploadTempDir" value="file:/upload/tmp"></beans:property>		
+		<beans:property name="maxInMemorySize" value="10485756"></beans:property>
+		
+		
+	</beans:bean>
+
 	<!-- contrller구분하고 mapping해준다 -->
 	<!-- 프로젝트 만들때 만든 기본 패키지로 설정되어있음 -->
 	<context:component-scan base-package="com.smhrd.web" />
