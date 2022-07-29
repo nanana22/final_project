@@ -1,6 +1,5 @@
 //리스트
 $(document).ready( () => { 
-
     // ajax통신, 글 데이터 가져오기(매개변수로 자바스크립트 객체를 받는다)
     $.ajax({
      url : 'boardReportList.do', // 어디로 요청을 보낼것인가?

@@ -146,24 +146,42 @@
 			<br> <br> <br> <br> <br> <br>
 
 			<div class="container">
-
-
-				<div class="paging">
-
-					<a href="#" class="bt">이전</a> <a href="#" class="num on">1</a> <a
-						href="#" class="num">2</a> <a href="#" class="num">3</a> <a
-						href="#" class="num">4</a> <a href="#" class="num">5</a> <a
-						href="#" class="bt">다음</a>
-
-				</div>
-
+			<div class="paging">
+			
+			
+			
+				<c:if test="${pagination.prev}">
+					<a class="bt" href="#"	onClick="fn_prev('${pagination.page}', '${pagination.range}', '${pagination.rangeSize}')">
+					Previous</a>
+					
+				</c:if>
+				
+				
+				
+				<c:forEach begin="${pagination.startPage}" end="${pagination.endPage}" var="idx">
+					<a class="num" href="#"	onClick="fn_pagination('${idx}', '${pagination.range}', '${pagination.rangeSize}')" <c:out value="${pagination.page == idx ? 'active' : ''}"/> ">
+					${idx} </a>
+				</c:forEach>
+				
+				
+				
+				<c:if test="${pagination.next}">
+					<a class="bt"  href="#"	onClick="fn_next('${pagination.range}', '${pagination.range}', '${pagination.rangeSize}')" >
+					Next</a>
+					
+				</c:if>
+				
+				
+				
+				
+			</div>
 			</div>
 
 
 
 
 
-
+<script type="text/javascript" src="/web/resources/js/reportPagingButton.js"></script>
 	<script type="text/javascript" src="resources/js/boardReportList.js"></script>
 	<!-- <script type="text/javascript" src="resources/js/boardSearchList.js"></script> -->
 	<%@ include file="footer.jsp" %>
