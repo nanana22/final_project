@@ -361,3 +361,7 @@ body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
 	overflow:hidden
 }
 
+
+#fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > button {
+	font-size : 20px;
+}

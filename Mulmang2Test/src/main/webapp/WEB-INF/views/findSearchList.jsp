@@ -264,14 +264,7 @@
 
 
 		<!-- 리스트 페이지영역 -->
-		<div class="paging">
-
-			<a href="#" class="bt">이전</a> <a href="#" class="num on">1</a> <a
-				href="#" class="num">2</a> <a href="#" class="num">3</a> <a href="#"
-				class="num">4</a> <a href="#" class="num">5</a> <a href="#"
-				class="bt">다음</a>
-
-		</div>
+	
 	</div>
 
 

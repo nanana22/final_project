@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#searchForm > table > tbody > tr:nth-child(1) > td > select
+{
+	display: block;
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+        border-radius: 0.25rem;
+    margin-right : 300px;
+	
+}
+
+
+#noneimg {
+	
+	width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+    left: 40%;
+	
+}
+
+
+#p1 {
+	
+	display : block;
+	position : relative ;
+	left: 40%;
+    top: 25px;
+    font-size: 25px;
+}
+
+#p2 {
+	display : block;
+	position : relative ;
+	left: 33%;
+	
+}
+
+#imgsize > div > div:nth-child(2) > div > div > div.col-md-8 > div,
+#imgsize > div > div:nth-child(1) > div > div > div.col-md-8 > div {
+	height : 180px;
+}
+
+
+#imgsize > div > div:nth-child(2) > div > div > div.col-md-4 > a > img,
+#imgsize > div > div:nth-child(1) > div > div > div.col-md-4 > a > img{
+	
+	height : 180px;
+}

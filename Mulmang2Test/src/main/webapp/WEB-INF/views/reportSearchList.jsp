@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>제보게시판 검색결과</title>
-<link rel="stylesheet" href="./resources/main/css/report.css">
+<link rel="stylesheet" href="/web/resources/main/css/report.css?ver1">
 
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
