@@ -42,15 +42,15 @@
 
                            
                             </div>
-                        </form>
                       </div>
                       <div class="row">
                           <button type="button" class="btn btn-secondary" id="fnext1">이전</button>
 
 
-                           <button type="button" class="btn btn-secondary" id="fnext">다음</button>
+                           <button type="submit" class="btn btn-secondary" id="fnext">다음</button>
 
                        </div>      
+                      </form>
           
            
         </div>

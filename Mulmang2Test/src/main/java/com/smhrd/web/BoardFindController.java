@@ -39,6 +39,12 @@ public class BoardFindController {
 //		return "find_write_1";
 //	}
 	
+	
+	@RequestMapping("findInsert.do")
+	public String findinsert() {
+		
+		return "find_write_1";
+	}
 
 	
 	
