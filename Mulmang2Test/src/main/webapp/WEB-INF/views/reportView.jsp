@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <title>제보 상세페이지</title>
-<link rel="stylesheet" href="/web/resources/main/css/reportView.css">
+<link rel="stylesheet" href="/web/resources/main/css/reportView.css?ver1">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -176,7 +176,7 @@
 
 
 
-						<div class="offcanvas-body">
+						<div class="offcanvas-body" id="ssxx">
 							<form id="msgForm" method="post">
 								<div class="mb-3 row-g-3">
 									<div class="col-sm-12">

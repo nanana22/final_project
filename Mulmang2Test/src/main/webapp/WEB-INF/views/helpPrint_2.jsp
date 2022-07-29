@@ -13,7 +13,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="/web/resources/css/helpPrint_1.css?ver3">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver3">
+<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver4">
 
 
 
@@ -63,7 +63,7 @@
 		<!-- 전단지제작 폼 -->
 
 		<div class="bb">
-			<div class="row1" id="head">실종 아동을 찾습니다</div>
+			<div class="row1" id="head"><p id="headP">실종 아동을 찾습니다</p></div>
 
 			<!-- 사진 업로드될 공간-->
 			<div class="row" style="position: relative; top: 30px; left: 30px;">
@@ -124,7 +124,7 @@
 
 				<form>
 					<fieldset>
-						<legend><%=print.getName() %></legend>
+						<legend id="line"><%=print.getName() %></legend>
 
 
 						<label for="" class="infoadd">○ 실종일자 : <%=print.getDate() %></label><br />
@@ -162,9 +162,16 @@
 			</div>
 
 		</div>
+    <!-- 아래 버튼 -->
+    <div id="CC">
+        <h3>색 변경</h3>
+        <fieldset>
+   
+          <div>배경색 : <input type="color" id="color1" value="#D60A0A"></div>
+          <div>강조색 : <input type="color" id="color2" value="#FFFF00"></div>
+        </fieldset>
 
-
-
+	</div>
 
 		<!-- 아래 버튼 -->
 
@@ -183,6 +190,39 @@
 			</div>
 
 		</div>
+
+
+
+<!-- 색변경 스크립트 -->
+<script>
+  var color1 = document.getElementById('color1');
+  var color2 = document.getElementById('color2');
+  
+  
+  
+  var box1 = document.getElementById('head');
+  var box2 = document.getElementById('call');
+  var line1 = document.getElementById('line');
+  var line2 = document.getElementById('headP');
+
+  
+  
+  color1.onchange = function() {
+    box1.style.backgroundColor = color1.value;
+    box2.style.backgroundColor = color1.value;
+  };
+  
+  color2.onchange = function() {
+    line1.style.backgroundColor = color2.value;
+    line2.style.color = color2.value;
+  };
+  
+  
+  </script>
+
+
+
+
 
 
 		<script
@@ -361,6 +401,6 @@ const dropFile2 = new DropFile2("drop-file2", "files",1);
     
 </script>
 
-<%@ include file="footer.jsp" %>
+
 </body>
 </html>

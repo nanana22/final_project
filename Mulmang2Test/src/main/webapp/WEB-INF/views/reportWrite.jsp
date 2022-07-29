@@ -12,13 +12,51 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+	
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300'
+	rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="/web/resources/main/css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="/web/resources/main/css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="/web/resources/main/css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="/web/resources/main/css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="/web/resources/main/css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="/web/resources/main/css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="/web/resources/main/css/cs-select.css">
+<link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
+
+<link rel="stylesheet" href="/web/resources/main/css/style.css">
+
+<link rel="stylesheet" href="/web/resources/main/css/reportView.css?Ver3">
 
 </head>
 <body>
+
+<%@ include file="header.jsp"%>
+
 	<%User user = (User)session.getAttribute("user"); %>
 	<div class="container">
-		<div class="row">
-			<h4 class="mb-3">제보 글쓰기</h4>
+		<div class="row" id="reportW">
+			<h3 class="mb-3">제보 글쓰기</h3>
 
 
 			<hr class="my-4">
@@ -27,28 +65,28 @@
 		<!-- 글쓰기 폼 -->
 		<div class="col-md-7 col-lg-8">
 			<form action="reportWrite.do" method="post" class="needs-validation" novalidate="">
-				<div class="row g-3">
-					<div class="col-sm-1">이름</div>
+				<div class="row g-4">
+					<div id="reWN" class="col-sm-12">이름</div>
 
-					<div class="col-sm-6">
+					<div class="col-sm-5">
 						<input type="text" class="form-control" id="REPORT_NAME"
 							placeholder="이름" name="person_name" value="" required="">
 
 					</div>
 
-					<div class="col-sm-5">
+					<div class="col-sm-7">
 						<input type="checkbox" id="dont" name="person_name">모름
 					</div>
 
 
-					<div class="col-sm-2">
+					<div class="col-sm-12">
 						<label for="FIND_GENDER" class="form-label">성별</label>
 					</div>
 
 
 
 
-					<div class="col-md-10">
+					<div class="col-md-12">
 						<div class="form-check form-check-inline" name="REPORT_GENDER">
 							<input class="form-check-input" type="radio" name="gender"
 								id="male" value="남"> <label class="form-check-label"
@@ -65,10 +103,17 @@
 
 
 
-					<div class="col-sm-2">
+					<div class="col-sm-6">
 						<label for="firstName" class="form-label">발견일자</label>
 					</div>
-					<div class="col-sm-3">
+					
+					
+					<div class="col-sm-6">
+						<label for="firstName" class="form-label">발견지역</label>
+					</div>
+					
+					
+					<div class="col-sm-6">
 						<input type="date" name="report_date">
 					</div>
 
@@ -78,10 +123,8 @@
 
 
 
-					<div class="col-sm-">
-						<label for="firstName" class="form-label">발견지역</label>
-					</div>
-					<div class="col-sm-4">
+					
+					<div class="col-sm-6">
 						<select class="form-select" aria-label="Default select example"
 							name="report_region">
 

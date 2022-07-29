@@ -144,6 +144,16 @@ button:hover {
 }
 
 
+
+// 스크롤바 없애기
+
+#ssxx{
+	
+	overflow:hidden
+}
+
+
+
 #find_table > thead > tr > td:nth-child(3) > div:nth-child(1) > label{
 	
 	font-weight: normal;

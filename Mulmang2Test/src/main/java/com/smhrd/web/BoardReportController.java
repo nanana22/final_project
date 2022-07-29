@@ -11,9 +11,12 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.mysql.cj.Session;
 import com.smhrd.domain.BoardReport;
+import com.smhrd.domain.Pagination;
+import com.smhrd.domain.Pagination2;
 import com.smhrd.domain.User;
 import com.smhrd.mapper.BoardReportMapper;
 
@@ -23,10 +26,10 @@ public class BoardReportController {
 	BoardReportMapper mapper;
 	
 	//reportList jsp로이동
-	@RequestMapping("/reportList.do")
-	public String reportList() {
-		return "reportList";
-	}
+//	@RequestMapping("/reportList.do")
+//	public String reportList() {
+//		return "reportList";
+//	}
 	
 	// 상세페이지
 	@RequestMapping("boardReportView.do/{report_seq}")
@@ -83,6 +86,30 @@ public class BoardReportController {
 		System.out.println(seq);
 		System.out.println(seq.getReport_seq());
 		return "redirect:/boardReportView.do/"+ seq.getReport_seq();
+	}
+	
+	
+	//민지 페이징
+	@RequestMapping("/reportList.do")
+	public String getBoardList(Model model , HttpServletRequest request,
+			@RequestParam(required = false, defaultValue = "1") int page, 
+			@RequestParam(required = false, defaultValue = "1") int range) throws Exception{
+		HttpSession session = request.getSession();
+		
+		//전체 게시글 개수		
+		int listCnt = mapper.boardReportCnt();
+		
+		//Pagination 객체생성
+		Pagination2 pagination = new Pagination2();
+		pagination.pageInfo(page, range, listCnt);
+		System.out.println("con pagination >> " + pagination);
+		session.setAttribute("pagination", pagination);
+		
+		List<BoardReport> rptList = mapper.boardReportList(pagination);
+		session.setAttribute("rptList", rptList);			
+		System.out.println("con >> " + rptList);
+		
+		return "reportList";
 	}
 
 }
