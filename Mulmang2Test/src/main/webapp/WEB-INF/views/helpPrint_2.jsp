@@ -13,7 +13,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="/web/resources/css/helpPrint_1.css?ver3">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver4">
+<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver2">
 
 
 
