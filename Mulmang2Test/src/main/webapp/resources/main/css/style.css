@@ -1833,7 +1833,7 @@ div.cs-select span {
 }
 
 #fh5co-wrapper {
-  overflow-x: hidden;
+overflow:hidden
   position: relative;
 }
 
