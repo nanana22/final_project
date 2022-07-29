@@ -16,19 +16,25 @@ import lombok.RequiredArgsConstructor;
 public class BoardReport {
 	
 	private int report_seq;
-	private String user_id;
+	@NonNull
+	public String user_id;
 	private String upload_date;
 	@NonNull
-	private String person_name;
-	private String gender;
-	private String report_date;
-	private String report_region;
+	public String person_name;
 	@NonNull
-	private String report_feature;
-	private String report_look;
+	public String gender;
 	@NonNull
-	private String report_desc;
-	private String report_photo;
+	public String report_date;
+	@NonNull
+	public String report_region;
+	@NonNull
+	public String report_feature;
+	@NonNull
+	public String report_look;
+	@NonNull
+	public String report_desc;
+	@NonNull
+	public String report_photo;
 	
 	
 
