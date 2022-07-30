@@ -5,19 +5,47 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
- <link rel="stylesheet" href="./resources/css/findWrite.css?ver1">
+ <link rel="stylesheet" href="./resources/css/findWrite.css?ver3">
+
+        <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300'
+	rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="/web/resources/main/css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="/web/resources/main/css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="/web/resources/main/css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="/web/resources/main/css/superfish.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="/web/resources/main/css/magnific-popup.css">
+<!-- Date Picker -->
+<link rel="stylesheet" href="/web/resources/main/css/bootstrap-datepicker.min.css">
+<!-- CS Select -->
+<link rel="stylesheet" href="/web/resources/main/css/cs-select.css">
+<link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
+
+<link rel="stylesheet" href="/web/resources/main/css/style.css">
 </head>
 <body>
+<%@ include file="header.jsp"%>
         
         <div class="container">
            <div class="row">
-        <h4 class="mb-3">찾기 글쓰기</h4>
+        <h3 class="mb-3">찾기 글쓰기</h3>
         
-            <h7 class="'mb-3">1.기본 정보 입력  >  2.사진 업로드</h7>
+            <h7 class="'mb-3">1.기본 정보 입력  >  2.사진 업로드 > 3.변환사진 반환</h7>
             <hr class="my-4">
     </div>
 
-            <div class="row">
+            <div class="row" id="UPDIV">
                 
                     <div class="col-sm-4">
                         <!-- 업로드 -->
@@ -35,6 +63,8 @@
                               </div>
                                 <label class="file-label" for="chooseFile">사진업로드</label>
                                 <input class="file" id="chooseFile"  name='uploadFile' multiple type="file" onclick="getElementById('chooseFile').display = none"  onchange="dropFile.handleFiles(this.files)()" accept="image/png, image/jpeg, image/gif" > 
+                              
+                              
                               </div>
                              
                                  
@@ -44,10 +74,10 @@
                             </div>
                       </div>
                       <div class="row">
-                          <button type="button" class="btn btn-secondary" id="fnext1">이전</button>
+                          <button type="button" class="btn btn-secondary" id="fnext"><<</button>
 
 
-                           <button type="submit" class="btn btn-secondary" id="fnext">다음</button>
+                           <button type="submit" class="btn btn-secondary" id="fnext1">>></button>
 
                        </div>      
                       </form>

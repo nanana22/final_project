@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="find.css">
+    <link rel="stylesheet" href="./resources/css/find.css">
+      <link rel="stylesheet" href="./resources/css/findWrite.css">
+    
+    
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -43,9 +46,9 @@
 <%=user_id.getUser_id()%>
     <div class="container">   
     <div class="row">
-        <h4 class="mb-3">찾기 글쓰기</h4>
+        <h3 class="mb-3">찾기 글쓰기</h3>
         
-            <h7 class="'mb-3">1.기본 정보 입력  >  2.사진 변환</h7>
+            <h7 class="'mb-3">1.기본 정보 입력  >  2. 사진업로드 > 3. 변환사진 반환</h7>
             <hr class="my-4">
     </div>
 
@@ -103,6 +106,7 @@
                     <div class="row">
                       <input type="date" name="MISSING_DATE"> 
                   </div>
+                </div>
                       <!-- <input type="text" class="form-control" id="date_dis" placeholder="실종일자" value="" required="">
                     </div> -->
 
