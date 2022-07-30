@@ -35,5 +35,9 @@ public class EtcController {
 	}
 	
 	
-
+	// 대책법
+	@RequestMapping("/helpHelp.do")
+	public String helpHelp() {
+		return "helpHelp";
+	}
 }

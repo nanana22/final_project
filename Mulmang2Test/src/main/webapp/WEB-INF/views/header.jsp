@@ -49,7 +49,7 @@
 									<ul class="fh5co-sub-menu">
 										<li><a href="/web/helpFilter.do">사진 필터</a></li>
 										<li><a href="/web/helpPrintFirst.do">전단지 제작</a></li>
-										<li><a href="#">대책법</a></li>
+										<li><a href="/web/helpHelp.do">대책법</a></li>
 
 									</ul>
 								</li>
