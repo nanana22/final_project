@@ -66,8 +66,8 @@
 		<div class="row info">
 			<div class="reportPhoto">
 			<figure class="figure">
-  				<img src="${rptView.report_photo}" class="figure-img img-fluid rounded" alt="...">
-  				
+  				<img src=".${rptView.report_photo}" class="figure-img img-fluid rounded" alt= "">
+  				<%-- <img src="../resources/saveImg/${rptView.report_photo}" class="figure-img img-fluid rounded" alt= ""> --%>
 			</figure>
 				
 			</div>

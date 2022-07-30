@@ -64,7 +64,7 @@
 
 		<!-- 글쓰기 폼 -->
 		<div class="col-md-7 col-lg-8">
-			<form action="reportWrite.do" method="post" class="needs-validation" novalidate="">
+			<form action="reportWrite.do" method="post" class="needs-validation" novalidate="" enctype="multipart/form-data">
 				<div class="row g-4">
 					<div id="reWN" class="col-sm-12">이름</div>
 
@@ -176,7 +176,7 @@
 						</div>
 					</div>
 				</div>
-				<br> <input type="file" id="input-file" name="report_photo">
+				<br> <input type="file" id="input-file" name="reportPhoto" multiple>
 
 				<hr class="my-4">
 
