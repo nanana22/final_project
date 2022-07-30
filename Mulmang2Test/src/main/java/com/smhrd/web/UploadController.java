@@ -75,7 +75,7 @@ public class UploadController {
 		// 이것도 그냥 결과 보여줄려고 하는거니까 나중에 수정하세요
 		model.addAttribute("face", face);
 		
-		return "test"; // 이건 결과 보여줄려고 하는거니까 나중에 수정할 것
+		return "uploadForm2"; // 이건 결과 보여줄려고 하는거니까 나중에 수정할 것
 		
 		
 		

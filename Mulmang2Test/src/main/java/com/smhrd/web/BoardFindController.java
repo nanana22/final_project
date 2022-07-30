@@ -22,6 +22,7 @@ import com.smhrd.domain.BoardFind;
 import com.smhrd.domain.BoardReport;
 import com.smhrd.domain.Face;
 import com.smhrd.domain.Pagination;
+import com.smhrd.domain.User;
 import com.smhrd.mapper.BoardFindMapper;
 
 @Controller
@@ -40,11 +41,21 @@ public class BoardFindController {
 //	}
 	
 	
+
 	@RequestMapping("findInsert.do")
-	public String findinsert() {
-		
-		return "find_write_1";
+	public String findinsert(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		User user = (User)session.getAttribute("user");
+		if(user != null) {
+			System.out.println("로그인 했음");
+			return "find_write_1";
+
+		}else {
+			System.out.println("로그인 기록 없음");
+			return "redirect:/userlog.do";
+		}
 	}
+	
 
 	
 	
