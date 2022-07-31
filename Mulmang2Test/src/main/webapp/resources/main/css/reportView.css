@@ -15,10 +15,6 @@
   font-style: normal;
 }
 
-h5, h4, h3 { 
-  font-family: 'LeferiBaseType-BoldA';
-}
-
 h7 {
   font-family: 'LeferiBaseType-RegularA';
 }
@@ -369,4 +365,15 @@ body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
 
 #fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > button {
 	font-size : 20px;
+}
+
+
+
+#reWr {
+	
+	width: 170px;
+	height : 38px; 
+	font-size:10px;
+	
+	
 }

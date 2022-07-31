@@ -1435,8 +1435,9 @@ div.cs-select span {
   }
 }
 #fh5co-features .feature-left .feature-copy {
-  float: right;
-  width: 80%;
+     float: right;
+    width: 104%;
+    padding-left: 90px;
 }
 @media screen and (max-width: 992px) {
   #fh5co-features .feature-left .feature-copy {
@@ -2110,7 +2111,9 @@ overflow:hidden
 /*# sourceMappingURL=style.css.map */
 
 
-
-
-
+#fh5co-blog-section > div:nth-child(2) > div > div:nth-child(1) > div > a > img {
+	
+	
+	height : 376.6px;
+}
 

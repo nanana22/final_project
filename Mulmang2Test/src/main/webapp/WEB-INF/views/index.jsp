@@ -63,7 +63,7 @@
 <link rel="stylesheet" href="/web/resources/main/css/cs-select.css">
 <link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
 
-<link rel="stylesheet" href="/web/resources/main/css/style.css?ver2">
+<link rel="stylesheet" href="/web/resources/main/css/style.css?ver3">
 
 
 <!-- Modernizr JS -->
@@ -311,18 +311,19 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive"
-							src="/web/resources/main/images/place-1.jpg" alt=""></a>
+						<a href="#"><img class="img-responsive" id="p1"
+							src="/web/resources/main/images/changee.jpg" alt=""></a>
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
 									<a href="/web/findList.do">미래얼굴예측기술</a>
 								</h3>
 								<span class="posted_by"></span>
-								<!-- <span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span> -->
+					
 								<p>
 									물망초의 "미래 얼굴 예측 기술"을 통해<br> 장기실종아동의 찾기에 도움을 줍니다.
 								</p>
+									
 								<p>
 									<a href="/web/findList.do">실종아동등록페이지로 이동</a>
 								</p>
@@ -332,8 +333,8 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="fh5co-blog animate-box">
-						<a href="/web/helpFilter.do"><img class="img-responsive"
-							src="/web/resources/main/images/place-1.jpg" alt=""></a>
+						<a href="/web/helpFilter.do"><img class="img-responsive" id="p1"
+							src="/web/resources/main/images/lookk.jpg" alt=""></a>
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
@@ -354,8 +355,8 @@
 				<div class="clearfix visible-sm-block"></div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="fh5co-blog animate-box">
-						<a href="/web/helpPrintFirst.do"><img class="img-responsive"
-							src="/web/resources/main/images/place-1.jpg" alt=""></a>
+						<a href="/web/helpPrintFirst.do"><img class="img-responsive" id="p1"
+							src="/web/resources/main/images/leff.jpg" alt=""></a>
 						<div class="blog-text">
 							<div class="prod-title">
 								<h3 style="text-align: center;">
@@ -407,7 +408,7 @@
 							<h3>부모님이 알아두는</h3>
 
 							<span>실종아동 발생시 7단계 절차</span> <span class="price"></span> <a
-								class="btn btn-primary btn-outline" href="#">바로가기<i
+								class="btn btn-primary btn-outline" href="/web/helpHelp.do" >바로가기<i
 								class="icon-arrow-right22"></i></a>
 						</div>
 					</div>
@@ -423,7 +424,7 @@
 							<h3>아이와 함께하는</h3>
 
 							<span>귀여운 캐릭터와 함께 배우는 예방지식</span> <span class="price"></span> <a
-								class="btn btn-primary btn-outline" href="#">바로가기<i
+								class="btn btn-primary btn-outline" href="/web/helpHelp.do" >바로가기<i
 								class="icon-arrow-right22"></i></a>
 						</div>
 					</div>
@@ -475,49 +476,31 @@
 				<div class="col-md-4 animate-box">
 
 					<div class="feature-left">
-						<span class="icon"> <i class="icon-hotairballoon"></i>
+					<!-- <span class="icon"> <i class="icon-wallet"></i> -->
 						</span>
 						<div class="feature-copy">
 							<h3>김훈겸</h3>
-							<p>역할 적기</p>
-							<p>01028024785</p>
+							<p>백엔드 담당</p>
+							<p>DmySQL을 이용한 DataBase 설계 및 구현</p>
+							<p>Spring Framework를 이용하여 게시판 글 등록 및 사진 업로드 후 출력 구현</p>
+							<p>010-2802-4785</p>
 						</div>
 					</div>
 
 				</div>
-
-				<div class="col-md-4 animate-box">
-					<div class="feature-left">
-						<span class="icon"> <i class="icon-search"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>안민준</h3>
-							<p>역할 적기</p>
-							<p>010-9030-2705</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="feature-left">
-						<span class="icon"> <i class="icon-wallet"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>양서린</h3>
-							<p>역할 : 인공지능 노화 모델링 및 학습</p>
-							<p>010-8946-8837</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
+				
+				
 				<div class="col-md-4 animate-box">
 
 					<div class="feature-left">
-						<span class="icon"> <i class="icon-wine"></i>
+						<!-- <span class="icon"> <i class="icon-wallet"></i> -->
 						</span>
 						<div class="feature-copy">
 							<h3>이민지</h3>
-							<p>아동제보 게시판 (목록 및 상세페이지, 검색 및 메세지 기능) 서버 구현</p>
+							<p>백엔드 담당</p>
+							<p>Spring Framework를 이용하여 게시판 목록 및 상세페이지 서버 구현/ 등록, 검색, 메세지, 페이징 서버 구현
+							</p>
+							<p>도움마당게시판 기능 서버 연결</p>
 							<p>010-2297-5412</p>
 						</div>
 					</div>
@@ -526,28 +509,74 @@
 
 				<div class="col-md-4 animate-box">
 					<div class="feature-left">
-						<span class="icon"> <i class="icon-genius"></i>
+						<!-- <span class="icon"> <i class="icon-wallet"></i> -->
 						</span>
 						<div class="feature-copy">
 							<h3>이정민</h3>
-
-							<p>전체 웹 페이지 화면 설계 및 구현</p>
+								
+							<p>프론트엔드 담당</p>
+							<p>전체화면설계(메인, 게시판 목록 및 상세페이지, 등록, 검색, 메시지, 도움마당)</p>
+							<p>fabric.js를 이용한 스티커기능 구현과 JavaScript를 이용한 회원가입 중복체크, 로그인구현</p>
 							<p>010-5814-4577</p>
 						</div>
 					</div>
 
 				</div>
+				
+				
+				
+
+				
+			</div>
+			<div class="row">
+				
 				<div class="col-md-4 animate-box">
 					<div class="feature-left">
-						<span class="icon"> <i class="icon-chat"></i>
-						</span>
+						<!-- <span class="icon"> <i class="icon-wallet"></i> -->
 						<div class="feature-copy">
 							<h3>하종현</h3>
-							<p>역할 적기</p>
-							<p>01051065648</p>
+						
+							<p>인공지능 담당</p>
+								<p>StyleGAN과 cGAN을 활용한 딥러닝 과정 수행</p>
+									<p>
+AI허브에서 제공하는 한국인 안면 이미지 데이터 신청 및  수집</p>
+<p>Python을 이용한 데이터 증식 및 데이터 전처리</p>
+									<p>010-5106-5648</p>
 						</div>
 					</div>
 				</div>
+				
+				
+				<div class="col-md-4 animate-box">
+					<div class="feature-left">
+					<!-- <span class="icon"> <i class="icon-wallet"></i> -->
+						</span>
+						<div class="feature-copy">
+							<h3>안민준</h3>
+							<p>인공지능 담당</p>
+								<p>코랩을 통해 GPU활용으로 노화 예측 이미지 오픈소스 모델링을 활용한 동양인 이미지 딥러닝 학습 및 산출
+ 
+								</p>
+							<p>010-9030-2705</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="feature-left">
+						<!-- <span class="icon"> <i class="icon-wallet"></i> -->
+						</span>
+						<div class="feature-copy">
+							<h3>양서린</h3>
+							<p>인공지능 담당</p>
+								<p>StyleGAN과 cGAN을 활용한 딥러닝 과정 수행</p>
+								<p>데이터 셋 크롤링을 통한 안면 데이터 수집 및 데이터 증식</p>
+								<p>가상 환경 설정 - VirtualBox에서 리눅스 환경 이용 및 anaconda를 이용해 가상환경 생성</p>
+							<p>010-8946-8837</p>
+						</div>
+					</div>
+				</div>
+				
+				
 			</div>
 		</div>
 	</div>

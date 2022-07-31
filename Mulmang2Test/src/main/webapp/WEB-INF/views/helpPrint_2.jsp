@@ -81,11 +81,13 @@
 								<img src="" alt="미리보기 이미지" class="preview">
 
 							</div>
+							<!-- 
 							<label id="oneBtn" class="file-label" for="chooseFile">사진업로드</label> <input
 								onclick="oneClk()"
 								class="file" id="chooseFile" type="file"
 								onchange="dropFile.handleFiles(this.files)"
 								accept="image/png, image/jpeg, image/gif">
+							 -->
 						</div>
 					</div>
 				</div>
@@ -104,11 +106,13 @@
 								<img src="" alt="미리보기 이미지" class="preview2">
 
 							</div>
+							<!--
 							<label id="twoBtn" class="file-label" for="chooseFile2">사진업로드</label> <input
 								onclick="twoClk()"
 								class="file" id="chooseFile2" type="file"
 								onchange="dropFile2.handleFiles(this.files)"
 								accept="image/png, image/jpeg, image/gif">
+								  -->
 						</div>
 					</div>
 				</div>
@@ -186,7 +190,7 @@
 
 			<div class="col-m-3 print2s_btn">
 				<button type="submit" class="btn btn-outline-secondary B2"  id="bt22"
-					onClick="location.href='help_print(2).html'">저 장</button>
+					onClick="location.href='help_print(2).html'">몰록으로</button>
 			</div>
 
 		</div>

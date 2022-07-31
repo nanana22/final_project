@@ -57,7 +57,7 @@
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 
-<link rel="stylesheet" href="./resources/css/helpHelp.css?ver1">
+<link rel="stylesheet" href="./resources/css/helpHelp.css?ver2">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -104,7 +104,7 @@
 
 		<!-- end:header-top -->
 
-	<h2 id="DE">대책법</h2>
+	<h3 id="DE"> 대책법</h3>
     <hr class="my-1">
     <div id="css_tabs">
         <input id="tab1" type="radio" name="tab"  checked="checked" />
@@ -167,10 +167,11 @@
         
         <!-- 아이  -->
         <div class="tab2_content">
-          
+     <!--        
 		<div class="row">
             <h3>부모님을 잃어버렸을때?</h3>
         </div>
+     
             <div class="row">
                 <div class="col-md-3"> 
                     <img src="/web/resources/main/images/stop.png" alt="">
@@ -192,13 +193,51 @@
                 </div>
                 <div class="col-md-3">
 
-                    <p class="rp">2.생각 하자!</p>
+                    <p class="rpp">2.생각 하자!</p>
                 </div>
                 <div class="col-md-3">
 
                      <p class="rp">3.도움을 요청하자!</p>
                 </div>
           
+            </div>
+              -->
+            
+            <div class="row">
+
+            
+                    <h3>만화로 배우는 예방지식</h3>
+            
+
+
+            <div class="row"  id ="ca">
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+                        src="https://www.youtube.com/embed/0pLFwMC6nBw" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+                     src="https://www.youtube.com/embed/nVGpbz1LPWI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+                        src="https://www.youtube.com/embed/2aiqXfPBvxU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            
             </div>
             </div>
 

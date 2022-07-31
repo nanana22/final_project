@@ -145,9 +145,17 @@ span {
 
 .rp {
 	
-   font-family: 'GmarketSansLight';
-	font-size : 18px;
+   font-family: 'GmarketSansMedium';
+	font-size : 30px;
 	font-weight : bold;
+	
+}
+
+.rpp {
+	font-family: 'GmarketSansMedium';
+	font-size : 30px;
+	font-weight : bold;
+
 	
 }
 
@@ -159,3 +167,27 @@ span {
 	
 	
 }
+
+
+#ca {
+	display: block;
+    position: relative;
+    bottom: 40px;
+	
+}
+
+
+h3{
+	font-family: 'GmarketSansMedium';
+}
+    
+
+
+
+
+
+
+
+
+
+

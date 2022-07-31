@@ -46,7 +46,7 @@
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 
-<link rel="stylesheet" href="/web/resources/main/css/reportView.css?Ver3">
+<link rel="stylesheet" href="/web/resources/main/css/reportView.css?Ver5">
 
 </head>
 <body>
@@ -181,8 +181,8 @@
 				<hr class="my-4">
 
 				<input type="hidden" name="user_id" value="<%=user.getUser_id()%>">
-				<button type="submit" class="btn btn-secondary"
-					style="width: 150px;">등록</button>
+				<button type="submit" class="btn btn-secondary" id="reWr"
+					>등록</button>
 			</form>
 		</div>
 	</div>

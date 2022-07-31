@@ -37,6 +37,7 @@
 <link rel="stylesheet" href="/web/resources/main/css/cs-skin-border.css">
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
+<link rel="stylesheet" href="/web/resources/main/findWrite.css">
 </head>
 <body>
 <%@ include file="header.jsp"%>
@@ -57,38 +58,31 @@
             <div class="row">
                 <div class="col-md-4"> 
                     <div class="card" style="width: 100%;">
-                    <img src="brand_03.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <input type="file" id="input-file" name="FIND_FACE">
-                    <!-- <a href="#" class="btn btn-secondary pb">사진 업로드</a> -->
-                        
-                    </div>
+                    <img src="brand_03.png" class="card-img-top" alt="..."  id="Bface">
+                    
                     </div>
                 </div>
+                
+                
                 <div class="col-md-4" >
-                    <button type="button" class="btn btn-secondary btn-lg bb">변환 하기</button>
+                    <button type="button" class="btn btn-secondary btn-lg bb" id="faceC">변환 하기</button>
                 </div>
+                
+                
                 <div class="col-md-4"> 
                     <div class="card" style="width: 100%;">
-                    <img src="brand_03.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="#" class="btn btn-secondary pb">사진 저장하기</a>
-                    </div>
+                    <img src="brand_03.png" class="card-img-top" alt="..." id="Aface">
+                    
                     </div>
                 </div>
             </div>
             <div>
                 <div class="row">
-                    <!-- <div class="text-center mt-3">
-                        <button type="button" class="btn-btn btn2">변경하기</button>
-                        <button type="button" class="btn-btn btn2">다시쓰기</button>
-                        <button type="button" class="btn-btn btn2">다시쓰기</button>
-                    </div> -->
-                    
-                            
-                                <button class="btn-2">이전</button>
-                                <button class="btn-2">등록하기</button>
-                                <button class="btn-2">스타일적용</button>
+                   <div id="fw3b">  
+                         <button class="btn btn-secondary" id="fwb">이전</button>
+                         <button class="btn btn-secondary" id="fww">등록하기</button>
+                         <button class="btn btn-secondary" id="fst">스타일적용</button>
+            		</div>  
                 </div>
               
             </div>
@@ -96,12 +90,6 @@
 
 
 
-<!-- 
-        <label className="input-file-button" for="input-file">
-            업로드
-          </label>
-          <input type="file" id="input-file" style= display:"none;">
-           -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

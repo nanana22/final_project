@@ -43,7 +43,7 @@
 <body>
 <%@ include file="header.jsp"%>
 <%User user_id = (User)session.getAttribute("user");%>
-<%=user_id.getUser_id()%>
+
     <div class="container">   
     <div class="row">
         <h3 class="mb-3">찾기 글쓰기</h3>

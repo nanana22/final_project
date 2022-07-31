@@ -83,40 +83,55 @@ button:hover {
 
 /* 페이징 */
 
+
+/* 페이징 */
+
 .paging {
   margin-top: 50px;
   text-align: center;
   font-size: 0;
+   
 }
 
+
 .paging {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   font-size: 0;
+     display: block;
+    position: relative;
+    right: 27px;
+    margin-bottom: 44px;
 }
 .paging a {
   display: inline-block;
   margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 100px;
-  font-size: 12px;
+  padding: 5px 10px; 
+  font-size: 15px;
+  text-decoration:none ;
+  font-family: 'LeferiBaseType-BoldA';
 }
 
  .paging a.bt {
-  border: 1px solid #eee;
-  background: #eee;
+
+  margin : 3px; 
+  font-family: 'LeferiBaseType-BoldA';
+	
 }
 
 .paging a.num {
-  border: 1px solid rgb(141, 157, 167);
+  
   font-weight: 600;
   color: rgb(141, 157, 167);
+  text-align : center;
 }
 
 .paging a.num.on {
-  background: rgb(141, 157, 167);
-  color: #fff;
+  
+  color: #3494e6;
 }
+
+
 
 
 

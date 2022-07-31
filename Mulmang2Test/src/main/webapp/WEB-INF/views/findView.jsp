@@ -13,7 +13,7 @@
    rel="stylesheet"
    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
    crossorigin="anonymous">
-<link rel="stylesheet" href="/web/resources/css/find.css?ver11">
+<link rel="stylesheet" href="/web/resources/css/find.css?ver12">
 
 <link
    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -42,11 +42,64 @@
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 
+<style>
+
+/* 페이징 */
+
+.paging {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0;
+   
+}
+
+
+.paging {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0;
+     display: block;
+    position: relative;
+    right: 27px;
+    margin-bottom: 44px;
+}
+.paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px; 
+  font-size: 15px;
+  text-decoration:none ;
+  font-family: 'LeferiBaseType-BoldA';
+}
+
+ .paging a.bt {
+
+  margin : 3px; 
+  font-family: 'LeferiBaseType-BoldA';
+	
+}
+
+.paging a.num {
+  
+  font-weight: 600;
+  color: rgb(141, 157, 167);
+  text-align : center;
+}
+
+.paging a.num.on {
+  
+  color: #3494e6;
+}
+
+
+</style>
+
 <script type="text/javascript">
    function goList() {
       location.href = '/web/findList.do'
    }
 </script>
+
 
 </head>
 <body>

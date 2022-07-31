@@ -1,3 +1,6 @@
+
+
+
 @charset "UTF-8";
 
 @font-face {
@@ -193,4 +196,30 @@
     }
     
     
-    /* 이단계 : 업로드부분 */
+    /* 이단계 : 업로드부분 끗 */
+    
+    
+    
+    /* 삼단계 : 변환부분 */
+    
+#faceC {
+
+        display: block;
+        position: relative;
+        top :234px;
+        left :194px;
+    
+    }
+    
+    #Bface , #Aface {
+    
+        width :350px;
+        height: 350px;
+    }
+    
+
+  #fw3b {
+    margin-left: 42%;
+    margin-top: 15%;
+
+  
