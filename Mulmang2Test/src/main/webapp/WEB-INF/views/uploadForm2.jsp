@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-4"> 
                     <div class="card" style="width: 100%;">
-                   <img alt="" src="resources/saveImg/${face.real_face}">
+                   <img alt="" src="${face.real_face}">
                     <div class="card-body">
                         
                     <!-- <a href="#" class="btn btn-secondary pb">사진 업로드</a> -->

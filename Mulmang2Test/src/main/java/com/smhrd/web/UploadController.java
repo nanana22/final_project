@@ -43,7 +43,9 @@ public class UploadController {
 		System.out.println("3");
 		// session.getServletContext() : 실제 실행되는 우리 프로젝트에 대한 정보를 가진 객체
 		// .getRealPath("resources/saveImg") : 우리 프로젝트 파일 중에서 resources/saveImg 경로를 찾아서 주소를 String으로 리턴시켜줌
-		String uploadFolder = session.getServletContext().getRealPath("resources/saveImg");
+		//String uploadFolder = session.getServletContext().getRealPath("resources/saveImg");
+		String uploadFolder = ("C:\\Users\\smhrd\\git\\final_project\\Mulmang2Test\\src\\main\\webapp\\resources\\saveImg");
+		
 		log.info("-------------");
 		log.info("경로 : ");
 		log.info(uploadFolder);
@@ -63,8 +65,8 @@ public class UploadController {
 		}//end catch
 			
 		// 파일 이름 꺼내기
-		String real_face = multipartFile.getOriginalFilename();
-		
+		String real_face = "./resources/saveImg/";
+		real_face += multipartFile.getOriginalFilename();
 		// 두 데이터를 vo로 묶기
 		Face face = new Face(real_face, user_id);
 		

@@ -72,7 +72,7 @@
       <div class="row">
          <div class="col">
             <div class="card" style="width: 43rem;">
-               <img src="${face }" class="card-img-top" alt="...">
+               <img src=".${face }" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text" style="text-align: center;">당시 모습</p>
                </div>
