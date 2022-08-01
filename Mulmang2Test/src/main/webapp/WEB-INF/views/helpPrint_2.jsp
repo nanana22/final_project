@@ -12,8 +12,8 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_1.css?ver3">
-<link rel="stylesheet" href="/web/resources/css/helpPrint_2.css?ver2">
+<link rel="stylesheet" href="./resources/css/helpPrint_1.css?ver3">
+<link rel="stylesheet" href="./resources/css/helpPrint_2.css?ver2">
 
 
 
@@ -56,7 +56,7 @@
 		<div class="row">
 			<h3  id="print2T" class="mb-3">전단지 제작하기</h3>
 
-			<h4 class="'mb-3">1.기본 정보 입력 > 2.사진 넣기</h4>
+			<h7 class="'mb-3" >1.기본 정보 입력 > 2.사진 넣기</h7>
 			<hr class="my-4">
 		</div>
 
@@ -190,7 +190,7 @@
 
 			<div class="col-m-3 print2s_btn">
 				<button type="submit" class="btn btn-outline-secondary B2"  id="bt22"
-					onClick="location.href='help_print(2).html'">몰록으로</button>
+					onClick="location.href='help_print(2).html'">목록으로</button>
 			</div>
 
 		</div>

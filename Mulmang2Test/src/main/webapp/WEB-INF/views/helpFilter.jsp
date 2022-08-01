@@ -14,7 +14,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 
-<link rel="stylesheet" href="/web/resources/css/helpFilter.css?ver2">
+<link rel="stylesheet" href="/web/resources/css/helpFilter.css?ver3">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.min.js"></script>
 
@@ -44,7 +44,7 @@
 					required multiple>
 			</div>
 			<canvas id="c" width="600" height="600"
-				style="border: 1px solid #ccc"></canvas>
+				style="border: 1px solid #999"></canvas>
 
 
 
@@ -55,11 +55,8 @@
 				<!-- <label class="file-label" for="chooseFile">사진업로드</label>
             <input class="file" id="chooseFile" type="file" multiple> -->
 
-				<button type="submit" class="btn btn-secondary bts1"
-					onClick="location.href='#'">
-					<p>저장하기</p>
-				</button>
-				<button type="submit" class="btn btn-secondary bts2"
+				
+				<button  type="submit" class="btn btn-secondary bts2"
 					onClick="location.href='/web/helpPrintFirst.do'">
 					<p>전단지 제작</p>
 				</button>

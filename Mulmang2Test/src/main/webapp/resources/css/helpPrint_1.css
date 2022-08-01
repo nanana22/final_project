@@ -59,10 +59,29 @@
  }
  
  
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ 
+ 
  #printB{
  display : block;
  position : relative;
  top : 30px;
  right : 40px;
+  font-family: 'LeferiBaseType-RegularA';
 
  }
+ 
+ 
+ #fh5co-wrapper > div.container.j > div:nth-child(1) > h4 {
+ 
+    font-family: 'GmarketSansMedium';
+ 
+ }
+ 
+ 
