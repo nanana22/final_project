@@ -90,10 +90,10 @@
 				aria-labelledby="nav-home-tab">
 				<div class="mask">
 					<img class="g1" src="/web/resources/img/helpFilter/마스크2.jpg" id="mmy-image1"> <img
-						class="g1" src="/web/resources/img/helpFilter/마스크3.png" id="mmy-image2"> <img
-						class="g1" src="/web/resources/img/helpFilter/마스크4.png" id="mmy-image3"> <img
+						class="g1" src="/web/resources/img/helpFilter/마스크3.png" id="mmy-image2" > <img
+						class="g1" src="/web/resources/img/helpFilter/마스크444.png" id="mmy-image3" onclick="Add3()"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크5.jfif" id="mmy-image4" > <img
-						class="g1" src="/web/resources/img/helpFilter/마스크66.png" id="mmy-image5" onclick="Add3()"> <img
+						class="g1" src="/web/resources/img/helpFilter/마스크66.png" id="mmy-image5" > <img
 						class="g1" src="/web/resources/img/helpFilter/마스크7.jpg" id="mmy-image6"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크8.jpg" id="mmy-image7"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크9.jpg" id="mmy-image8">
@@ -148,7 +148,7 @@
 // 안경 2 구현
 
 function Add2() {
-    var imgElement =  document.getElementById('my-image2');
+    var imgElement =  document.getElementById('mmy-image3');
     
     var imgInstance = new fabric.Image(imgElement, {                                                                                                                             
     left: 100,
@@ -167,7 +167,7 @@ canvas.add(imgInstance);
 
 // 마스크 스티커 추가
 function Add3() {
-    var imgElement =  document.getElementById('mmy-image5');
+    var imgElement =  document.getElementById('mmy-image3');
     
     var imgInstance = new fabric.Image(imgElement, {                                                                                                                             
     left: 100,
