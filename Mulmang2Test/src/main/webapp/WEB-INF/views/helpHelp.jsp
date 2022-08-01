@@ -205,6 +205,32 @@
                     </div>
                 </div>
             </div>
+            <div class="row"  id ="ca">
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+                        src="https://www.youtube.com/embed/t5apfYn7SUY"  title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+                     src="https://www.youtube.com/embed/9PnCXeWCxr4"  title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class ="frame">
+                        <iframe width="300" height="200" 
+src="https://www.youtube.com/embed/2vqppvcfdAs" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
             
             
             </div>
@@ -313,7 +339,6 @@
 
 
 
-<%@ include file="footer.jsp" %>
 	</body>
 </html>
 

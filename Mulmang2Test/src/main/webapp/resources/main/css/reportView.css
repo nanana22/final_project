@@ -315,7 +315,8 @@ body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
 }
 
 
-#fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(8) > input[type=date]
+#fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(8) > input[type=date],
+body > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(8) > input[type=date]
 
 {
 	display: block;
@@ -334,7 +335,9 @@ body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
 }
 
 
-#fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(9) > select{
+#fh5co-wrapper > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(9) > select,
+body > div.container > div.col-md-7.col-lg-8 > form > div > div:nth-child(9) > select
+{
 	
 	isplay: block;
     width: 100%;
@@ -373,7 +376,21 @@ body > div > div:nth-child(3) > div.mt-6.mlb.msgListbt > button {
 	
 	width: 170px;
 	height : 38px; 
-	font-size:10px;
+	font-size:15px;
+	
+	
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body > div.container > div.row.info{
+	
+	 font-family: 'GmarketSansMedium';
 	
 	
 }

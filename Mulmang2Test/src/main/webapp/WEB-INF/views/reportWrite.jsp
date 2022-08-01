@@ -46,7 +46,7 @@
 
 <link rel="stylesheet" href="/web/resources/main/css/style.css">
 
-<link rel="stylesheet" href="/web/resources/main/css/reportView.css?Ver5">
+<link rel="stylesheet" href="/web/resources/main/css/reportView.css?ver8">
 
 </head>
 <body>

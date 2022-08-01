@@ -37,9 +37,9 @@
   
   
   
-  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(5) > label,
-  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(9) > label,
-  #fh5co-wrapper > div.container > div.col-md-7.col-lg-8.print1 > form > div.row.g-3 > div:nth-child(7) > label {
+#PRINTINFO > form > div.row.g-3 > div:nth-child(7) > label,
+#PRINTINFO > form > div.row.g-3 > div:nth-child(5) > label,
+#PRINTINFO > form > div.row.g-3 > div:nth-child(9) > label{
   
       font-weight: normal;
   }
