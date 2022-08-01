@@ -92,8 +92,8 @@
 					<img class="g1" src="/web/resources/img/helpFilter/마스크2.jpg" id="mmy-image1"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크3.png" id="mmy-image2"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크4.png" id="mmy-image3"> <img
-						class="g1" src="/web/resources/img/helpFilter/마스크5.jfif" id="mmy-image4"> <img
-						class="g1" src="/web/resources/img/helpFilter/마스크6.jfif" id="mmy-image5"> <img
+						class="g1" src="/web/resources/img/helpFilter/마스크5.jfif" id="mmy-image4" > <img
+						class="g1" src="/web/resources/img/helpFilter/마스크66.png" id="mmy-image5" onclick="Add3()"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크7.jpg" id="mmy-image6"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크8.jpg" id="mmy-image7"> <img
 						class="g1" src="/web/resources/img/helpFilter/마스크9.jpg" id="mmy-image8">
@@ -107,7 +107,7 @@
 
 				<div class="cap">
 					<img src="/web/resources/img/helpFilter/안경2.png" id="my-image1" onclick="Add()"> <img
-						src="/web/resources/img/helpFilter/안경2.webp" id="my-image2"> <img src="/web/resources/img/helpFilter/안경4.png"
+						src="/web/resources/img/helpFilter/안경2.webp" id="my-image2" onclick="Add2()"> <img src="/web/resources/img/helpFilter/안경4.png"
 						id="my-image3"> <img src="/web/resources/img/helpFilter/모자.jpg" id="my-image4">
 					<img src="/web/resources/img/helpFilter/모자2.webp" id="my-image5"> <img
 						src="/web/resources/img/helpFilter/모자3.jpg" id="my-image6">
@@ -143,5 +143,47 @@
 		crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="resources/js/helpFilter.js"></script>
+<script>	
+	
+// 안경 2 구현
+
+function Add2() {
+    var imgElement =  document.getElementById('my-image2');
+    
+    var imgInstance = new fabric.Image(imgElement, {                                                                                                                             
+    left: 100,
+    top: 50,
+    angle: 0,
+    opacity: 0.85
+})
+
+
+    canvas.add(imgInstance);
+    canvas.setActiveObject(imgInstance);
+}
+
+canvas.add(imgInstance);
+
+
+// 마스크 스티커 추가
+function Add3() {
+    var imgElement =  document.getElementById('mmy-image5');
+    
+    var imgInstance = new fabric.Image(imgElement, {                                                                                                                             
+    left: 100,
+    top: 50,
+    angle: 0,
+    opacity: 0.85
+})
+
+
+    canvas.add(imgInstance);
+    canvas.setActiveObject(imgInstance);
+}
+
+canvas.add(imgInstance);
+
+</script>
+	
 </body>
 </html>
