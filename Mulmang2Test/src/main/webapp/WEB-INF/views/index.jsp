@@ -481,7 +481,7 @@
 						<div class="feature-copy">
 							<h3>김훈겸</h3>
 							<p>백엔드 담당</p>
-							<p>DmySQL을 이용한 DataBase 설계 및 구현</p>
+							<p>mySQL을 이용한 DataBase 설계 및 구현</p>
 							<p>Spring Framework를 이용하여 게시판 글 등록 및 사진 업로드 후 출력 구현</p>
 							<p>010-2802-4785</p>
 						</div>
