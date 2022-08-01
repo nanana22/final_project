@@ -36,8 +36,9 @@
     
     
     
-    <!-- 민지 검색 -->
-    <select id="boardFindSearch" parameterType="com.smhrd.domain.BoardFind" resultType="com.smhrd.domain.BoardFind">
+    <!--검색 -->
+    <select id="boardFindSearch" parameterType="com.smhrd.domain.BoardFind" 
+        resultType="com.smhrd.domain.BoardFind">
         SELECT * 
         FROM TBL_FINDING f, TBL_FACE r, TBL_DEEP d
         WHERE (f.user_id = r.user_id
