@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 
-<link rel="stylesheet" href="./resources/css/joinForm.css?ver1">
+<link rel="stylesheet" href="/web/resources/css/joinForm.css?ver5">
 <style type="text/css"></style>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-latest.js"></script>
@@ -60,23 +60,25 @@
 				<div>
 					<p class="notnull">아이디</p>
 					<div class="boxSize">
-						<input type="text" name="user_id" value="" placeholder="2~12자 이내"
+						<input type="text" name="user_id" value="" placeholder="2~12자 이내"  id="uif_id" oninput="uif_idCheck()"
 							id="user_id" required oninput="uif_idCheck()">
-						<button class="dbCk" type="submit" name="button">중복확인</button>
+						
 					</div>
-					<p class="dbCkRs">중복체크</p>
+					<p id="idCheck"></p>
 				</div>
 
 				<div>
 					<p class="notnull">비밀번호</p>
-					<input type="password" name="user_pw" value=""
-						placeholder="비밀번호를 입력해주세요" required>
+					<input type="password" name="user_pw" value="" id="uif_pw"
+						placeholder="비밀번호를 입력해주세요" oninput="uif_pwCheck()" minlength="4"  required>
+						 <p id="pwCheck"></p>
 				</div>
 
 				<div>
 					<p class="notnull">비밀번호 확인</p>
-					<input type="password" name="user_pwCk" value=""
-						placeholder="비밀번호를 한번 더 입력해주세요" required>
+					<input type="password" name="user_pwCk" value="" id="uif_pwck"
+						placeholder="비밀번호를 한번 더 입력해주세요" oninput="uif_pwckCheck()" minlength="4" required>
+						<p id="pwckCheck"></p>
 				</div>
 
 				<div>
@@ -89,11 +91,11 @@
 					<div>
 						<p class="notnull">닉네임</p>
 						<div class="boxSize">
-							<input type="text" name="user_nick" value=""
+							<input type="text" name="user_nick" value="" id="uif_nick" oninput="uif_nickCheck()"
 								placeholder="2~12자 이내" required>
-							<button class="dbCk" type="submit" name="button">중복확인</button>
+							
 						</div>
-						<p class="dbCkRs">중복체크</p>
+						<p id="nickCheck"></p>
 					</div>
 
 
@@ -158,6 +160,120 @@
 
 		}
 	</script>
+	
+	
+	
+	 <script>
+         function uif_pwCheck(){
+               
+               let uif_pw = $('#uif_pw').val().length;
+               
+               if(uif_pw==0){
+                  $('#pwCheck').text('비밀번호를 입력하세요!')
+                  $('#pwCheck').css({'color':'#d04444'});
+                  $('#uif_pw').css({'border-color':'#d04444'});
+                  
+               }else if(uif_pw<4){
+                  $('#pwCheck').text('비밀번호를 4자리 이상 입력하세요');
+                  $('#pwCheck').css({'color':'#d04444'});
+                  $('#uif_pw').css({'border-color':'#d04444'});
+                  
+               }else{
+                  $('#pwCheck').text('');
+                  $('#uif_pw').css({'border-color':'#1c7cb4'});
+               }
+            }
+            
+            function uif_pwckCheck(){
+               
+               let uif_pw = $('#uif_pw').val();
+               let uif_pwck = $('#uif_pwck').val();
+               
+               if(uif_pwck==0){
+                  $('#pwckCheck').text('비밀번호를 입력하세요!')
+                  $('#pwckCheck').css({'color':'#d04444'});
+                  $('#uif_pwck').css({'border-color':'#d04444'});
+               }else if(uif_pwck.length<4){
+                  $('#pwckCheck').text('비밀번호를 4자리 이상 입력하세요');
+                  $('#pwckCheck').css({'color':'#d04444'});
+                  $('#uif_pwck').css({'border-color':'#d04444'});
+                  
+               }else if(uif_pw==uif_pwck){
+                  $('#pwckCheck').text('비밀번호가 같습니다!');
+                  $('#pwckCheck').css({'color':'#1c7cb4'});
+                  $('#uif_pwck').css({'border-color':'#1c7cb4'});
+               }else{
+                  $('#pwckCheck').text('비밀번호가 다릅니다!');
+                  $('#pwckCheck').css({'color':'#d04444'});
+                  $('#uif_pwck').css({'border-color':'#d04444'});
+               }
+            }
+            
+            
+            
+            //  여기서 부턴 실험
+
+            function uif_idCheck(){
+               
+               let uif_id = $('#uif_id').val();
+               
+               let idLength = 0;
+               let engCheck = /[a-z]/;
+               let numCheck = /[0-9]/;
+               let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+               
+               for(let i=0; i < uif_id.length; i++){
+                  id = uif_id.charAt(i);
+                  if(escape(id).length>4){
+                     idLength += 2;
+                  }else{
+                     idLength += 1;
+                  }
+               }
+               
+               if(uif_id == null || uif_id == "dd"){
+                  $('#idCheck').html('<p class="checkred">중복된 아이디입니다.<p>');
+                  $('#uif_id').css({'border-color':'#d04444'});
+                  $('#idCheck').css({'color':'#d04444'});
+               }else if(uif_id == null || uif_id == "s"){
+                   $('#idCheck').html('<p class="checkred">사용가능한 아이디입니다!.<p>');
+                   $('#uif_id').css({'border-color':'#1c7cb4'});
+                   $('#idCheck').css({'color':'#1c7cb4'});
+               }
+            }
+            
+            function uif_nickCheck(){
+               
+               let uif_nick = $('#uif_nick').val();
+               
+               let nickLength = 0;
+               let engCheck = /[a-z]/;
+               let numCheck = /[0-9]/;
+               let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+               
+               for(let i=0; i < uif_nick.length; i++){
+                  nick = uif_nick.charAt(i);
+                  if(escape(nick).length>4){
+                     nickLength += 2;
+                  }else{
+                     nickLength += 1;
+                  }
+               }
+               
+         
+               
+               if(uif_nick == null || uif_nick == "dkdk"){
+                  $('#nickCheck').html('<p class="checkred">이미 사용중인 닉네임입니다.<p>');
+                  $('#uif_nick').css({'border-color':'#d04444'});
+                  $('#nickCheck').css({'color':'#d04444'});
+               }else if(uif_nick == null || uif_nick == "s"){
+                   $('#nickCheck').html('<p class="checkred">사용가능한 닉네임입니다.<p>');
+                   $('#uif_nick').css({'border-color':'#1c7cb4'});
+                   $('#nickCheck').css({'color':'#1c7cb4'});
+               }
+            }
+
+      </script>
 
 </body>
 </html>

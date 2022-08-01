@@ -238,8 +238,11 @@ input[type=radio]:checked.smallradio {
 	font-family: 'GmarketSansMedium';
 	font-size : 15px;	
     color: #555;
-    width: 150px;
-    margin-left: 130px;
+        width: 182px;
+	display : block;
+	position : relative;
+	left : 200px;
+}
     
 	
 }
@@ -286,4 +289,10 @@ position: relative;
 	position : relative;
 	left: 155px;
 	
+}
+
+
+#joinJO {
+	
+	margin-left : 20px;
 }
