@@ -108,7 +108,7 @@
 
 					<div class="col-sm-4">
 						<input type="text" class="form-control" id="regionDt"
-							placeholder="___도  __ 시 __ 동" name="name" value="" required="">
+							placeholder="___도  __ 시 __ 동" name="region" value="" required="">
 				
 					</div>
 

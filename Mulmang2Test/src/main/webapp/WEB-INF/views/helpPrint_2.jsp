@@ -133,7 +133,7 @@
 
 						<label for="" class="infoadd">○ 실종일자 : <%=print.getDate() %></label><br />
 
-						<label for="" class="infoadd">○ 실종장소 : 경상남도 창원시 의창구 용호동 용지호수</label><br />
+						<label for="" class="infoadd">○ 실종장소 : <%=print.getRegion() %></label><br />
 
 						<label for="" class="infoadd">○ 신체특징 : <%=print.getFeature() %></label>
 					</fieldset>
